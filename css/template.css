@@ -174,7 +174,7 @@ article {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding: 0 50px;
+	padding: 30px 50px;
 }
 
 .my-page {
@@ -460,3 +460,66 @@ a.cssLogo {
 	color:#fff;
 	text-decoration:underline;
 }
+
+
+	span.reference{
+				position:fixed;
+				left:0px;
+				bottom:0px;
+				background:#000;
+				width:100%;
+				font-size:10px;
+				line-height:20px;
+				text-align:right;
+				height:20px;
+				-moz-box-shadow:-1px 0px 10px #000;
+				-webkit-box-shadow:-1px 0px 10px #000;
+				box-shadow:-1px 0px 10px #000;
+			}
+			span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				margin-right:10px;
+				
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+			.bg_img img{
+				width:100%;
+				position:fixed;
+				top:0px;
+				left:0px;
+				z-index:-1;
+			}
+			h1{
+				font-size:75px;
+				text-align:right;
+				position:absolute;
+				right:40px;
+				top:20px;
+				font-weight:normal;
+				/*text-shadow:  0 0 3px #0096ff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0096ff, 0 0 70px #0096ff, 0 0 80px #0096ff, 0 0 100px #0096ff, 0 0 150px #0096ff;
+			*/}
+			h1 span{
+				display:block;
+				font-size:15px;
+				font-weight:bold;
+			}
+			h2{
+				position:absolute;
+				top:220px;
+				left:50px;
+				font-size:40px;
+				font-weight:normal;
+				/*text-shadow:  0 0 3px #f6ff00, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f6ff00, 0 0 70px #f6ff00, 0 0 80px #f6ff00, 0 0 100px #f6ff00, 0 0 150px #f6ff00;*/}
+				
+				
+					body, html, body button, body input, #main-menu .sub-menu li { font-family: 'Roboto Condensed'; }
+		h1,h2,h3,h4,h5,h6, #main-menu > li,
+		.my-popup h3 { font-family: 'Open Sans'; }
+		#my-mainbody-columns > section { width: 100%; }			
+		@media (min-width: 1031px) {
+		#my-mainmenu-collapse { height: auto!important; }
+			}
