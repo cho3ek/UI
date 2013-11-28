@@ -1,0 +1,444 @@
+<!DOCTYPE html 
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+	  
+<html>
+<head>
+	<title>UI movies - best reviews, best galleries, best movie website ever!</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+
+	<link rel="stylesheet" href="css/template.css">
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
+
+	
+	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+	<script src="script/modernizr.custom.17475.js"></script>
+		
+	<style type="text/css">
+		body, html, body button, body input, #main-menu .sub-menu li { font-family: 'Roboto Condensed'; }
+		h1,h2,h3,h4,h5,h6, #main-menu > li,
+		.my-popup h3 { font-family: 'Open Sans'; }
+		#my-mainbody-columns > section { width: 100%; }			
+		@media (min-width: 1031px) {
+		#my-mainmenu-collapse { height: auto!important; }
+			}
+	</style>
+
+		  <link rel="stylesheet" href="css/menu.css" type="text/css" media="screen"/>
+		
+        <style type="text/css">
+			span.reference{
+				position:fixed;
+				left:0px;
+				bottom:0px;
+				background:#000;
+				width:100%;
+				font-size:10px;
+				line-height:20px;
+				text-align:right;
+				height:20px;
+				-moz-box-shadow:-1px 0px 10px #000;
+				-webkit-box-shadow:-1px 0px 10px #000;
+				box-shadow:-1px 0px 10px #000;
+			}
+			span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				margin-right:10px;
+				
+			}
+			span.reference a:hover{
+				color:#ddd;
+			}
+			.bg_img img{
+				width:100%;
+				position:fixed;
+				top:0px;
+				left:0px;
+				z-index:-1;
+			}
+			h1{
+				font-size:75px;
+				text-align:right;
+				position:absolute;
+				right:40px;
+				top:20px;
+				font-weight:normal;
+				/*text-shadow:  0 0 3px #0096ff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0096ff, 0 0 70px #0096ff, 0 0 80px #0096ff, 0 0 100px #0096ff, 0 0 150px #0096ff;
+			*/}
+			h1 span{
+				display:block;
+				font-size:15px;
+				font-weight:bold;
+			}
+			h2{
+				position:absolute;
+				top:220px;
+				left:50px;
+				font-size:40px;
+				font-weight:normal;
+				/*text-shadow:  0 0 3px #f6ff00, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f6ff00, 0 0 70px #f6ff00, 0 0 80px #f6ff00, 0 0 100px #f6ff00, 0 0 150px #f6ff00;
+*/}
+		</style>
+		
+
+
+    </script>
+
+    <!-- FOR THE MAP -->
+
+    <link rel="stylesheet" type="text/css" href="css/map.css" />
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key={AIzaSyDodIU9Eg4OeP-FPXHxx325KPuQAPnDkpM}&sensor=false">
+
+    <script type="text/javascript">
+    // This example displays a marker at the center of Australia.
+// When the user clicks the marker, an info window opens.
+
+function initialize() {
+  var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+  var mapOptions = {
+    zoom: 4,
+    center: myLatlng
+  };
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      'sandstone rock formation in the southern part of the '+
+      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      'Aboriginal people of the area. It has many springs, waterholes, '+
+      'rock caves and ancient paintings. Uluru is listed as a World '+
+      'Heritage Site.</p>'+
+      '<p>Attribution: Uluru, <a href="http://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'http://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Uluru (Ayers Rock)'
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>  
+
+
+		
+</head>
+	
+<body class="home">
+
+
+	<div id="logo_main">
+		<img src="images/logo_main.png" style="float:left;margin-top:-70px;margin-left:160px;" alt="" />
+			<div style="float:right;margin-top:-110px;font-size:12px;color:#ffffff;z-index:9;">
+
+<table>
+<tr>
+<td style="width:120px;">Hello <b>John Doe</b> !</td>
+<td style="width:20px;"><img src="images/icon-account.png" style="width:15px;padding-" alt="" /></td>
+<td style="width:100px;"><a href="#" class="header-user-info">Your account</a></td>
+
+<td style="width:20px;"><img src="images/icon-ticket.png" style="width:15px;padding-" alt="" /></td>
+<td><a href="#" class="header-user-info">Your tickets</a></td>
+</tr>
+</table>
+		</div>
+		
+		<div class="oe_wrapper">
+			<div id="oe_overlay" class="oe_overlay"></div>
+			<ul id="oe_menu" class="oe_menu">
+				<li><a href="">Movies</a>
+					<div>
+						<ul>
+							<li class="oe_heading">Summer 2011</li>
+							<li><a href="#">Milano</a></li>
+							<li><a href="#">Paris</a></li>
+							<li><a href="#">Special Events</a></li>
+							<li><a href="#">Runway Show</a></li>
+							<li><a href="#">Overview</a></li>
+						</ul>
+						<ul>
+							<li class="oe_heading">Winter 2010</li>
+							<li><a href="#">Milano</a></li>
+							<li><a href="#">New York</a></li>
+							<li><a href="#">Behind the scenes</a></li>
+							<li><a href="#">Interview</a></li>
+							<li><a href="#">Photos</a></li>
+							<li><a href="#">Download</a></li>
+						</ul>
+						<ul>
+							<li class="oe_heading">Categories</li>
+							<li><a href="#">Casual</a></li>
+							<li><a href="#">Business</a></li>
+							<li><a href="#">Underwear</a></li>
+							<li><a href="#">Nature Pure</a></li>
+							<li><a href="#">Swimwear</a></li>
+							<li><a href="#">Evening</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="">Cinemas</a>
+					<div style="left:-111px;"><!-- -112px -->
+						<ul>
+							<li class="oe_heading">Fashion Shows</li>
+							<li><a href="#">Milano</a></li>
+							<li><a href="#">Paris</a></li>
+							<li><a href="#">Berlin</a></li>
+							<li><a href="#">New York</a></li>
+							<li><a href="#">London</a></li>
+						</ul>
+						<ul>
+							<li class="oe_heading">Events</li>
+							<li><a href="#">Fashion Party 2011</a></li>
+							<li><a href="#">Evening specials</a></li>
+							<li><a href="#">Fashion Day Milano</a></li>
+							<li><a href="#">Model Workshops</a></li>
+						</ul>
+						<ul>
+							<li class="oe_heading">Media</li>
+							<li><a href="#">Wallpapers</a></li>
+							<li><a href="#">Downloads</a></li>
+							<li><a href="#">Images</a></li>
+							<li><a href="#">Contest 2011</a></li>
+							<li><a href="#">Fashion Mania</a></li>
+							<li><a href="#">Green Earth Day</a></li>
+						</ul>
+					</div>
+				</li>
+				<li style="width:142px;"><a style="width:130px;" href="">Coming soon</a>
+					<div style="left:-223px;">
+						<ul class="oe_full">
+							<li class="oe_heading">Fashion Fragrances</li>
+							<li><a href="#">Deálure</a></li>
+							<li><a href="#">Violet Woman</a></li>
+							<li><a href="#">Deep Blue for Men</a></li>
+							<li><a href="#">New York, New York</a></li>
+							<li><a href="#">Illusion</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="">About us</a>
+					<div style="left:-335px;">
+						<ul>
+							<li class="oe_heading">Shows 2010</li>
+							<li><a href="#">Milano</a></li>
+							<li><a href="#">Paris</a></li>
+							<li><a href="#">Berlin</a></li>
+							<li><a href="#">New York</a></li>
+							<li><a href="#">London</a></li>
+						</ul>
+						<ul>
+							<li class="oe_heading">Shows 2011</li>
+							<li><a href="#">Milano</a></li>
+							<li><a href="#">Paris</a></li>
+							<li><a href="#">Berlin</a></li>
+							<li><a href="#">New York</a></li>
+							<li><a href="#">London</a></li>
+						</ul>
+						<ul>
+							<li class="oe_heading">Special Events</li>
+							<li><a href="#">Fashion Party 2011</a></li>
+							<li><a href="#">Fashion Countdown Party 2010</a></li>
+							<li><a href="#">Fashion Day Milano</a></li>
+							<li><a href="#">Model Workshops</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a  style="width:120px;" href="">Events</a>
+					<div style="left:-447px;">
+						<ul>
+							<li class="oe_heading">Europe</li>
+							<li><a href="#">Milano</a></li>
+							<li><a href="#">Paris</a></li>
+							<li><a href="#">Berlin</a></li>
+							<li><a href="#">London</a></li>
+						</ul>
+						<ul>
+							<li class="oe_heading">Asia</li>
+							<li><a href="#">Hong Kong</a></li>
+							<li><a href="#">Tokio</a></li>
+							<li><a href="#">New Delhi</a></li>
+							<li><a href="#">Beijing</a></li>
+						</ul>
+						<ul>
+							<li class="oe_heading">United States</li>
+							<li><a href="#">New York</a></li>
+							<li><a href="#">Los Angeles</a></li>
+							<li><a href="#">Seattle</a></li>
+							<li><a href="#">Miami</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>	
+		</div>
+      
+
+		<div id="map-canvas"/>
+
+        <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				var $oe_menu		= $('#oe_menu');
+				var $oe_menu_items	= $oe_menu.children('li');
+				var $oe_overlay		= $('#oe_overlay');
+
+                $oe_menu_items.bind('mouseenter',function(){
+					var $this = $(this);
+					$this.addClass('slided selected');
+					$this.children('div').css('z-index','9999').stop(true,true).slideDown(200,function(){
+						$oe_menu_items.not('.slided').children('div').hide();
+						$this.removeClass('slided');
+					});
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('selected').children('div').css('z-index','1');
+				});
+
+				$oe_menu.bind('mouseenter',function(){
+					var $this = $(this);
+					$oe_overlay.stop(true,true).fadeTo(200, 0.4);
+					$this.addClass('hovered');
+					$oe_overlay.addClass('hovered');
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('hovered');
+					$oe_overlay.stop(true,true).fadeTo(200, 0);
+					$oe_menu_items.children('div').hide();
+					$oe_overlay.removeClass('hovered');
+				})
+            });
+        </script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	<div class="my-page-wrapper my-page">
+	
+		
+		<div class="my-page-wrap">	
+		<div style="clear:both;height:40px;"></div>
+			<div id="my-mainbody-columns" class="my-content-no-sidebar">			
+				
+				
+				<section id="my-mainbody">
+				
+				
+					
+					
+					<h3>Coming soon...</h3><br/>
+							<div class="fixed-bar demo-3">
+					<!-- Elastislide Carousel -->
+					<ul id="carousel" class="elastislide-list">
+						<li><a href="#"><img src="images/posters_small/avatar.jpg" alt="image01" /></a></li>
+						<li><a href="#"><img src="images/posters_small/borat.jpg" alt="image02" /></a></li>
+						<li><a href="#"><img src="images/posters_small/ironman.jpg" alt="image03" /></a></li>
+						<li><a href="#"><img src="images/posters_small/matrix.jpg" alt="image04" /></a></li>
+						<li><a href="#"><img src="images/posters_small/nine.jpg" alt="image05" /></a></li>
+						<li><a href="#"><img src="images/posters_small/prince_of_persia.jpg" alt="image06" /></a></li>
+						<li><a href="#"><img src="images/posters_small/star_wars.jpg" alt="image07" /></a></li>
+						<li><a href="#"><img src="images/posters_small/twilight.jpg" alt="image08" /></a></li>
+						<li><a href="#"><img src="images/posters_small/bubble.jpg" alt="image09" /></a></li>
+					</ul>
+					<!-- End Elastislide Carousel -->
+				
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="script/jquerypp.custom.js"></script>
+		<script type="text/javascript" src="script/jquery.elastislide.js"></script>
+		<script type="text/javascript">
+			
+			$( '#carousel' ).elastislide( {
+				minItems : 2
+			} );
+			
+		</script>
+		
+		
+		
+					
+					
+					
+				</section>
+			</div>
+		</div>
+	<div style="clear:both;"><p>&nbsp;</p></div>
+		<div id="my-bottom1">
+			<div class="area">
+				<div class="box col2">
+					<h3 class="box-title"><strong>USER INTERFACES</strong></h3>
+					<div class="textwidget">
+						<address>
+							<p><b>Universidad Carlos III de Madrid</b></p>
+							<p>Project: <i>User Interfaces</i></p>
+							<p>Av de la Universidad, 30</p>
+							<p>Leganés, España</p>
+							<p>(+34) 916 24 95 00</p>
+						</address>
+					</div>
+				</div>
+				<div class="box col6">
+					<h3 class="box-title">About Us</h3>
+					<div class="textwidget">
+						<ul>
+							<li><a href="#">Who are we?</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box col6">
+					<h3 class="box-title">Service</h3>
+					<div class="textwidget">
+						<ul>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Book tickets</a></li>
+							<li><a href="#">Find your theatre</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box col6">
+					<h3 class="box-title">Connect</h3>
+						<div class="textwidget">
+							<ul>
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Google+</a></li>
+							</ul>
+						</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>
