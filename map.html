@@ -1,121 +1,50 @@
 <!DOCTYPE html 
       PUBLIC "-//W3C//DTD HTML 4.01//EN"
       "http://www.w3.org/TR/html4/strict.dtd">
-	  
 <html>
 <head>
 	<title>UI movies - best reviews, best galleries, best movie website ever!</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="">
-
+	<meta name="description" content="" />
 	<link rel="stylesheet" href="css/template.css">
-	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
-
-	
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
 	<script src="script/modernizr.custom.17475.js"></script>
-		
-	<style type="text/css">
-		body, html, body button, body input, #main-menu .sub-menu li { font-family: 'Roboto Condensed'; }
-		h1,h2,h3,h4,h5,h6, #main-menu > li,
-		.my-popup h3 { font-family: 'Open Sans'; }
-		#my-mainbody-columns > section { width: 100%; }			
-		@media (min-width: 1031px) {
-		#my-mainmenu-collapse { height: auto!important; }
-			}
-	</style>
+	<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen"/>
 
-		  <link rel="stylesheet" href="css/menu.css" type="text/css" media="screen"/>
-		
-        <style type="text/css">
-			span.reference{
-				position:fixed;
-				left:0px;
-				bottom:0px;
-				background:#000;
-				width:100%;
-				font-size:10px;
-				line-height:20px;
-				text-align:right;
-				height:20px;
-				-moz-box-shadow:-1px 0px 10px #000;
-				-webkit-box-shadow:-1px 0px 10px #000;
-				box-shadow:-1px 0px 10px #000;
-			}
-			span.reference a{
-				color:#aaa;
-				text-transform:uppercase;
-				text-decoration:none;
-				margin-right:10px;
-				
-			}
-			span.reference a:hover{
-				color:#ddd;
-			}
-			.bg_img img{
-				width:100%;
-				position:fixed;
-				top:0px;
-				left:0px;
-				z-index:-1;
-			}
-			h1{
-				font-size:75px;
-				text-align:right;
-				position:absolute;
-				right:40px;
-				top:20px;
-				font-weight:normal;
-				/*text-shadow:  0 0 3px #0096ff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0096ff, 0 0 70px #0096ff, 0 0 80px #0096ff, 0 0 100px #0096ff, 0 0 150px #0096ff;
-			*/}
-			h1 span{
-				display:block;
-				font-size:15px;
-				font-weight:bold;
-			}
-			h2{
-				position:absolute;
-				top:220px;
-				left:50px;
-				font-size:40px;
-				font-weight:normal;
-				/*text-shadow:  0 0 3px #f6ff00, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f6ff00, 0 0 70px #f6ff00, 0 0 80px #f6ff00, 0 0 100px #f6ff00, 0 0 150px #f6ff00;
-*/}
-		</style>
+	<!-- FOR THE MAP -->
+
+	<link rel="stylesheet" href="css/map.css">
+	<script type="text/javascript"src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+
+    <script type="text/javascript" src="script/map.js"></script>
 
 
-    <!-- FOR THE MAP -->
 
-    <link rel="stylesheet" type="text/css" href="css/map.css" />
 
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?sensor=false">
-
-      
-   
-		
 </head>
 	
+
 <body class="home">
-
-
+	<!-- HEADER PART WITH TOP USER MENU -->
 	<div id="logo_main">
-		<img src="images/logo_main.png" style="float:left;margin-top:-70px;margin-left:160px;" alt="" />
-			<div style="float:right;margin-top:-110px;font-size:12px;color:#ffffff;z-index:9;">
+		<img src="images/logo.png" style="float:left;position:absolute;margin-top:25px;" alt="" />
+			<div style="float:right;font-size:12px;color:#ffffff;z-index:9;position:relative;">
+				<table>
+					<tr>
+					<td style="width:120px;">Hello <b>John Doe</b> !</td>
+					<td style="width:20px;"><img src="images/icon-account.png" style="width:15px;padding-" alt="" /></td>
+					<td style="width:100px;"><a href="#" class="header-user-info">Your account</a></td>
 
-<table>
-<tr>
-<td style="width:120px;">Hello <b>John Doe</b> !</td>
-<td style="width:20px;"><img src="images/icon-account.png" style="width:15px;padding-" alt="" /></td>
-<td style="width:100px;"><a href="#" class="header-user-info">Your account</a></td>
-
-<td style="width:20px;"><img src="images/icon-ticket.png" style="width:15px;padding-" alt="" /></td>
-<td><a href="#" class="header-user-info">Your tickets</a></td>
-</tr>
-</table>
-		</div>
+					<td style="width:20px;"><img src="images/icon-ticket.png" style="width:15px;padding-" alt="" /></td>
+					<td><a href="#" class="header-user-info">Your tickets</a></td>
+					</tr>
+				</table>
+			</div>
 		
+		<!-- MAIN MENU -->
 		<div class="oe_wrapper">
 			<div id="oe_overlay" class="oe_overlay"></div>
 			<ul id="oe_menu" class="oe_menu">
@@ -243,110 +172,32 @@
 				</li>
 			</ul>	
 		</div>
-      
-
-
-		// <div class="fluid-wrapper">
-		// <iframe src="https://mapsengine.google.com/map/edit?mid=zoY8K1klEAWY.k2il_GU5BkmE" width="640" height="480"></iframe>
-		// </div>
+		<!-- END OF MAIN MENU -->
 		
-		// <div id="map-canvas"/>
-
-        <!-- The JavaScript -->
-        
+		
+        <!-- START SCRIPTS FOR MENU -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-
-        <script type="text/javascript">
-            $(function() {
-				var $oe_menu		= $('#oe_menu');
-				var $oe_menu_items	= $oe_menu.children('li');
-				var $oe_overlay		= $('#oe_overlay');
-
-                $oe_menu_items.bind('mouseenter',function(){
-					var $this = $(this);
-					$this.addClass('slided selected');
-					$this.children('div').css('z-index','9999').stop(true,true).slideDown(200,function(){
-						$oe_menu_items.not('.slided').children('div').hide();
-						$this.removeClass('slided');
-					});
-				}).bind('mouseleave',function(){
-					var $this = $(this);
-					$this.removeClass('selected').children('div').css('z-index','1');
-				});
-
-				$oe_menu.bind('mouseenter',function(){
-					var $this = $(this);
-					$oe_overlay.stop(true,true).fadeTo(200, 0.4);
-					$this.addClass('hovered');
-					$oe_overlay.addClass('hovered');
-				}).bind('mouseleave',function(){
-					var $this = $(this);
-					$this.removeClass('hovered');
-					$oe_overlay.stop(true,true).fadeTo(200, 0);
-					$oe_menu_items.children('div').hide();
-					$oe_overlay.removeClass('hovered');
-				})
-            });
-        </script>
-		
-		
-		
-		
-		
-		
-		
+        <script type="text/javascript" src="script/menu.js"></script>
+		<!-- END SCRIPTS FOR MENU -->
 		
 		
 	</div>
-	<div class="my-page-wrapper my-page">
+	<!-- END OF HEADER PART -->
 	
-		
-		<div class="my-page-wrap">	
-		<div style="clear:both;height:40px;"></div>
-			<div id="my-mainbody-columns" class="my-content-no-sidebar">			
-				
-				
-				<section id="my-mainbody">
-				
-				
-					
-					
-					<h3>Coming soon...</h3><br/>
-							<div class="fixed-bar demo-3">
-					<!-- Elastislide Carousel -->
-					<ul id="carousel" class="elastislide-list">
-						<li><a href="#"><img src="images/posters_small/avatar.jpg" alt="image01" /></a></li>
-						<li><a href="#"><img src="images/posters_small/borat.jpg" alt="image02" /></a></li>
-						<li><a href="#"><img src="images/posters_small/ironman.jpg" alt="image03" /></a></li>
-						<li><a href="#"><img src="images/posters_small/matrix.jpg" alt="image04" /></a></li>
-						<li><a href="#"><img src="images/posters_small/nine.jpg" alt="image05" /></a></li>
-						<li><a href="#"><img src="images/posters_small/prince_of_persia.jpg" alt="image06" /></a></li>
-						<li><a href="#"><img src="images/posters_small/star_wars.jpg" alt="image07" /></a></li>
-						<li><a href="#"><img src="images/posters_small/twilight.jpg" alt="image08" /></a></li>
-						<li><a href="#"><img src="images/posters_small/bubble.jpg" alt="image09" /></a></li>
-					</ul>
-					<!-- End Elastislide Carousel -->
-				
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="script/jquerypp.custom.js"></script>
-		<script type="text/javascript" src="script/jquery.elastislide.js"></script>
-		<script type="text/javascript">
-			
-			$( '#carousel' ).elastislide( {
-				minItems : 2
-			} );
-			
-		</script>
-		
-		
-		
-					
-					
-					
-				</section>
-			</div>
+
+	
+	
+	<!-- START MAIN WRAPPER WITH CONTENT -->
+	<div class="my-page-wrapper my-page">
+		<div class="my-page-wrap">
+			<h3>Choose a theater near you...</h3><br>
+			<input type="button" value="Geocode" onclick="codeAddress()">
+			<div id="map-canvas"></div>	
 		</div>
-	<div style="clear:both;"><p>&nbsp;</p></div>
+		
+		<div style="clear:both;"><p>&nbsp;</p></div>
+		
+		<!--START FOOTER -->
 		<div id="my-bottom1">
 			<div class="area">
 				<div class="box col2">
@@ -392,6 +243,8 @@
 				</div>	
 			</div>
 		</div>
+		<!--END FOOTER -->
 	</div>
+	<!-- END WRAPPER -->
 </body>
 </html>
