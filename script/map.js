@@ -17,7 +17,7 @@
     		position: new google.maps.LatLng(40.414449,-3.703716)
     	});
 
-    	var contentString1 = "<h3>Theater 1</h3>";
+    	var contentString1 = '<h3>Theater 1</h3>'+'<p>Information for the specifict theater will go here...</p>';
 
     	var infowindow = new google.maps.InfoWindow({
     		content: contentString1,
@@ -31,7 +31,7 @@
     		position: new google.maps.LatLng(40.4117703,-3.6992544)
     	});
 
-    	var contentString2 = "<h3>Theater 2</h3>";
+    	var contentString2 = '<h3>Theater 2</h3>'+'<p>Information for the specifict theater will go here...</p>';
 
     	var infowindow2 = new google.maps.InfoWindow({
     		content: contentString2,
