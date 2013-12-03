@@ -3,3 +3,7 @@
   	width: 100%;
   	color: #000;
   }
+
+  #map-canvas img { /*fixes the distorted image*/
+  	max-width: none;
+  }
