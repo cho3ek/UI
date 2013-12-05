@@ -15,11 +15,14 @@
 
 .movie-showtime {
 	text-align: center;
+	background-image: url('../images/showtime_background.png');
 	color: #FFF;
-	background-color: #000;
 	margin-right: 4px;
 	margin-bottom: 4px;
 	float: left;
-	height: 30px;
-	width: 70px;
+	margin: 5px;
+	padding-top: 2px;
+	width: 72px;
+	height: 25px;
+	font-size: 12px;
 }
