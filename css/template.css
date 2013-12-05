@@ -106,6 +106,7 @@ ol li {
 
 p {
 	margin: 0.5em 0 1.5em;
+	color:#555;
 }
 
 table td {
@@ -539,3 +540,9 @@ a.cssLogo {
 				color:#fff!important;
 			}
 			
+#movie-photos-background{
+	background-image: url('../images/movie_photos_background.jpg');
+	width:100%;
+	padding:15px 5px;
+	height:210px;
+}

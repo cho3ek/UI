@@ -1,12 +1,5 @@
-*{
-	margin:0;
-	padding:0;
-}
+
 body{
-	font-family:"Open Sans", Helvetica, sans-serif;
-	font-weight:300;
-	font-size:15px;
-	color: #fff;
 	overflow-x:hidden;
 }
 

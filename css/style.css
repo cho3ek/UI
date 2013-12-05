@@ -2787,3 +2787,7 @@ div.wp-caption {
 .box.double.col6 ~ .box.col6 {
 	width: 13.33%;
 }
+
+#movie-photos-background{
+	background-image: url('../images/movie_photos_background.jpg');
+}
