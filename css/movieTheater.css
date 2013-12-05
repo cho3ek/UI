@@ -25,4 +25,17 @@
 	width: 72px;
 	height: 25px;
 	font-size: 12px;
+	font-weight: bold;
+}
+
+.movie-showtime a {
+	color: #FFF!important;
+}
+
+.movie-showtime a:hover {
+	color: #ff7e57!important;
+}
+
+.review-wrapper {
+	width: 75%;
 }
