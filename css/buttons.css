@@ -19,6 +19,20 @@
 	-moz-box-shadow: inset 0px 0px 3px #999;
 }
 
+	
+.button {
+	text-transform:uppercase;
+	padding:10px 20px 10px 20px;
+	background-color:#90add3;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align:center;
+}
+			
+.button a {
+	color:#fff!important;
+}
+
 /* The styles for the grey button */
 .grey {
 	color: #444!important;

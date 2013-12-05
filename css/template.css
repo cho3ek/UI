@@ -516,7 +516,7 @@ a.cssLogo {
 				/*text-shadow:  0 0 3px #f6ff00, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f6ff00, 0 0 70px #f6ff00, 0 0 80px #f6ff00, 0 0 100px #f6ff00, 0 0 150px #f6ff00;*/}
 				
 				
-					body, html, body button, body input, #main-menu .sub-menu li { font-family: 'Roboto Condensed'; }
+					body, html, body input, #main-menu .sub-menu li { font-family: 'Roboto Condensed'; }
 		h1,h2,h3,h4,h5,h6, #main-menu > li,
 		.my-popup h3 { font-family: 'Open Sans'; }
 		#my-mainbody-columns > section { width: 100%; }			
@@ -525,24 +525,40 @@ a.cssLogo {
 			}
 			
 			
-			
-			.button {
-				text-transform:uppercase;
-				padding:10px 20px 10px 20px;
-				background-color:#90add3;
-				-moz-border-radius: 5px;
-				border-radius: 5px;
-				text-align:center;
-			}
-			
-			.button a {
-				
-				color:#fff!important;
-			}
+		
 			
 #movie-photos-background{
 	background-image: url('../images/movie_photos_background.jpg');
 	width:100%;
 	padding:15px 5px;
 	height:210px;
+}
+
+#textarea {
+	width:100%;
+	height:80px;
+	border:1px solid #dadada;
+	font-size:11px;
+	padding:15px;
+	font-family:'Open Sans';
+}
+
+.comments {
+	margin-top:40px;
+}
+
+.comment-post {
+	margin-top:0px;
+	margin-bottom:35px;
+	font-size:14px;
+}
+
+.comment-avatar {
+	width:70px;
+	padding-right:20px;
+}
+
+.comment-date {
+	color:#888;
+	font-size:12px;
 }
