@@ -168,7 +168,7 @@
 					<div style="clear:both;"><p>&nbsp;</p></div>
 
 					<img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" />
-					<h4>Comments (2)</h4><br/>
+					<h4 id = "commentCount">Comments (2)</h4><br/>
 					<form>
 						<textarea id="textarea" placeholder="Add your comment here" class="comment"></textarea>
 						<div id="count" style="font-size:13px;font-family:'Open Sans';">Characters left: 250</div>
@@ -182,7 +182,7 @@
 
 					<script type="text/javascript">
 
-					var numberOfComments = 2;
+					var numOfComments = 2;
 
 					$(document).ready(function(){
 
@@ -196,10 +196,15 @@
 					});
 
 					function addComment(){
+
+
 						var commentText = $("#textarea").val();
 						$(".comments").prepend('<table><tr><td><img src="images/avatar1.jpg" class="comment-avatar" alt="" /></td><td><b>John Doe</b><br/><div class="comment-date">23.11.2013 11:12am</div></td></tr></table><p class="comment-post">'+commentText+'</p>');
 						$("#textarea").val('');
-						numberOfComments++;
+						numOfComments = numOfComments + 1;
+
+						$("#commentCount").text("Comments ("+numOfComments+")");
+
 					}
 
 					</script>
