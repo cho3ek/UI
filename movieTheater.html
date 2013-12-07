@@ -125,7 +125,7 @@
 						</p>	
 					</div>
 					<div style="clear:both;"><p>&nbsp;</p></div>
-					<h4>Movies and Showtimes Available At This Theater</h4> <br> <br>
+					<img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" /><h4>Movies and Showtimes Available At This Theater</h4> <br> <br>
 					<div class = "movie-showtime-wrapper">
 						<div class = "movie-title">
 							<a href="#"><b>Thor: The Dark World</b></a> <br>
@@ -164,17 +164,74 @@
 							<a href = "#">11:00p</a>
 						</div>						
 					</div>	
-					<div class = "review-wrapper">
-						hello
+
+					<div style="clear:both;"><p>&nbsp;</p></div>
+
+					<img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" />
+					<h4>Comments (2)</h4><br/>
+					<form>
+						<textarea id="textarea" placeholder="Add your comment here" class="comment"></textarea>
+						<div id="count" style="font-size:13px;font-family:'Open Sans';">Characters left: 250</div>
+					</form>
+					
+
+
+
+
+					<div class="button black" onclick="addComment()" style="float:right;width:150px;">Add Comment</div>
+
+					<script type="text/javascript">
+
+					var numberOfComments = 2;
+
+					$(document).ready(function(){
+
+						$("#textarea").keyup(function(){
+							$("#count").text("Characters left: " + (250 - $(this).val().length));
+							if($(this).val().length>=250) {
+								$("#count").text("Characters left: 0");
+							}
+						});	
+
+					});
+
+					function addComment(){
+						var commentText = $("#textarea").val();
+						$(".comments").prepend('<table><tr><td><img src="images/avatar1.jpg" class="comment-avatar" alt="" /></td><td><b>John Doe</b><br/><div class="comment-date">23.11.2013 11:12am</div></td></tr></table><p class="comment-post">'+commentText+'</p>');
+						$("#textarea").val('');
+						numberOfComments++;
+					}
+
+					</script>
+
+
+					<div class="comments">
+						<!-- FIRST COMMENT -->
+						<table><tr><td>
+							<img src="images/avatar1.jpg" class="comment-avatar" alt="" /></td><td>
+							<b>Pablo Perez</b><br/>
+							<div class="comment-date">23.11.2013 11:12am</div>
+						</td></tr></table>
+						<p class="comment-post">2 stars, I'm just gonna say it. This theater is cheap. They only show 2 movies here, and the ambience isn't that great, they are in desperate need of new chairs, drapes, carpet cleaning, a restroom remodel, and a new concession stand.</p>
+
+
+						<!-- SECOND COMMENT -->
+						<table><tr><td>
+							<img src="images/avatar2.jpg" class="comment-avatar" alt="" /></td><td>
+							<b>Jose M.</b><br/>
+							<span class="comment-date">21.11.2013 8.30pm</span>
+						</td></tr></table>
+						<p class="comment-post">This theater even has the aisle straight down the middle.
+						Other than that, I am a fan of this place.  I paid $5 for a matinee film before 6 PM for a movie that was released that day.  I also paid $5 for a small popcorn that was probably for two.  
+						Just a suggestion, I parked around the corner for free in the neighborhood.</p>
 
 					</div>
-						
+
 				</section>
 			</div>
 		</div>
 		
 		<div style="clear:both;"><p>&nbsp;</p></div>
-
 
 		
 		<!--START FOOTER -->

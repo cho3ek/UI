@@ -210,11 +210,20 @@
 							$("#count").text("Characters left: 0");
 						}
 						});
+
+					function addComment(){
+						var commentText = $("#textarea").val();
+						$(".comments").prepend('<table><tr><td><img src="images/avatar1.jpg" class="comment-avatar" alt="" /></td><td><b>John Doe</b><br/><div class="comment-date">23.11.2013 11:12am</div></td></tr></table><p class="comment-post">'+commentText+'</p>');
+						$("#textarea").val('');
+						numberOfComments++;
+					}
+
+
 					</script>
 		
 		
 		
-				<div class="button black" style="float:right;width:150px;"><a href="#">Add comment</a></div>
+				<div class="button black" onclick="addComment()" style="float:right;width:150px;">Add Comment</div>
 				
 				
 				
