@@ -1,0 +1,196 @@
+<!DOCTYPE html 
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>UI movies - best reviews, best galleries, best movie website ever!</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/template.css">
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+	<script src="script/modernizr.custom.17475.js"></script>
+	<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/movieTheater.css" type="text/css"/>	
+	
+<link rel="stylesheet" href="css/buttons.css">
+<script src="script/modernizr-min.js"></script>
+
+<!-- CSS for the seat selector, js for the selector after html-->
+<link rel="stylesheet" href="css/chooseSeats.css" type="text/css"/>
+
+</head>
+	
+
+<body class="home">
+	<!-- HEADER PART WITH TOP USER MENU -->
+	<div id="logo_main">
+		<img src="images/logo.png" style="float:left;position:absolute;margin-top:25px;" alt="" />
+			<div style="float:right;font-size:12px;color:#ffffff;z-index:9;position:relative;">
+				<table>
+					<tr>
+					<td style="width:120px;">Hello <b>John Doe</b> !</td>
+					<td style="width:20px;"><img src="images/icon-account.png" style="width:15px;padding-" alt="" /></td>
+					<td style="width:100px;"><a href="#" class="header-user-info">Your account</a></td>
+
+					<td style="width:20px;"><img src="images/icon-ticket.png" style="width:15px;padding-" alt="" /></td>
+					<td><a href="#" class="header-user-info">Your tickets</a></td>
+					</tr>
+				</table>
+			</div>
+		
+			<!-- MAIN MENU -->
+		<div class="oe_wrapper">
+			<div id="oe_overlay" class="oe_overlay"></div>
+			<ul id="oe_menu" class="oe_menu">
+				<li><a href="">Movies</a>
+					<div>
+						<ul>
+							<li class="oe_heading">Movies database</li>
+							<li><a href="movie.html">All movies</a></li>
+							<li><a href="movie.html">Latest</a></li>
+							<li><a href="movie.html">Coming soon</a></li>
+						</ul>
+						
+					</div>
+				</li>
+				<li><a href="">Theatres</a>
+					<div style="left:-0px;"><!-- -112px -->
+						<ul>
+							<li class="oe_heading">Theatres in Madrid!</li>
+							<li><a href="map.html">View a map</a></li>
+							<li><a href="movieTheater.html">View a list</a></li>
+						</ul>
+						
+					</div>
+				</li>
+				<li><a href="">Book a ticket</a>
+					<div style="left:-60px;">
+						<ul>
+							<li class="oe_heading">Buy a ticket online</li>
+							<li><a href="#">Choose a cinema</a></li>
+							<li><a href="#">Choose a movie</a></li>
+						</ul>
+						
+					</div>
+				</li>
+				<li><a  style="width:120px;" href="">Trailers</a>
+					<div style="left:-95px;">
+						<ul>
+							<li class="oe_heading">View trailers</li>
+							<li><a href="#">2013</a></li>
+							<li><a href="#">2012</a></li>
+							<li><a href="#">2011</a></li>
+							<li><a href="#">Older</a></li>
+							<li><a href="#">All</a></li>
+						</ul>
+						
+					</div>
+				</li>
+			</ul>	
+		</div>
+		<!-- END OF MAIN MENU -->
+		
+		
+        <!-- START SCRIPTS FOR MENU -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        <script type="text/javascript" src="script/menu.js"></script>
+		<!-- END SCRIPTS FOR MENU -->
+		
+		
+	</div>
+	<!-- END OF HEADER PART -->
+	
+	
+	
+	
+	
+	
+	<!-- START MAIN WRAPPER WITH CONTENT -->
+	<div class="my-page-wrapper my-page">
+		<div class="my-page-wrap">	
+			<div id="my-mainbody-columns" class="my-content-no-sidebar">	
+				<section id="my-mainbody">
+					
+					<h4> Choose seats by clicking the desired seat location</h4> <br>
+					<div id="holder"> 
+						<ul  id="place">
+						</ul>    
+					</div>
+					<div style="float:left;"> 
+						<ul id="seatDescription">
+							<li style="background:url('images/available_seat_img.gif') no-repeat scroll 0 0 transparent;">Available Seat</li>
+							<li style="background:url('images/booked_seat_img.gif') no-repeat scroll 0 0 transparent;">Booked Seat</li>
+							<li style="background:url('images/selected_seat_img.gif') no-repeat scroll 0 0 transparent;">Selected Seat</li>
+						</ul>
+					</div>
+					<div style="clear:both;width:100%">
+						<input type="button" id="btnShowNew" value="Show Selected Seats" />
+						<input type="button" id="btnShow" value="Show All" />           
+					</div>
+
+					<!-- This loads the script that creates the chart -->
+					<script src="script/chooseSeats.js"></script>
+
+
+
+
+				</section>	
+			</div>
+		</div>
+		
+		<div style="clear:both;"><p>&nbsp;</p></div>
+
+		
+		<!--START FOOTER -->
+		<div id="my-bottom1">
+			<div class="area">
+				<div class="box col2">
+					<h3 class="box-title"><strong>USER INTERFACES</strong></h3>
+					<div class="textwidget">
+						<address>
+							<p><b>Universidad Carlos III de Madrid</b></p>
+							<p>Project: <i>User Interfaces</i></p>
+							<p>Av de la Universidad, 30</p>
+							<p>Leganés, España</p>
+							<p>(+34) 916 24 95 00</p>
+						</address>
+					</div>
+				</div>
+				<div class="box col6">
+					<h3 class="box-title">About Us</h3>
+					<div class="textwidget">
+						<ul>
+							<li><a href="#">Who are we?</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box col6">
+					<h3 class="box-title">Service</h3>
+					<div class="textwidget">
+						<ul>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Book tickets</a></li>
+							<li><a href="#">Find your theatre</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box col6">
+					<h3 class="box-title">Connect</h3>
+						<div class="textwidget">
+							<ul>
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Google+</a></li>
+							</ul>
+						</div>
+				</div>	
+			</div>
+		</div>
+		<!--END FOOTER -->
+	</div>
+	<!-- END WRAPPER -->
+</body>
+</html>
