@@ -45,7 +45,7 @@ a:focus,
 #my-mainbody h2 a:active,
 #my-mainbody h2 a:focus,
 #my-mainbody h2 a:hover,
-#my-sidebar .box a:hover {
+#my-sidebar .box a:hover{
 	color: #ff7e57;
 }
 
