@@ -40,14 +40,14 @@ $(document).ready(function () {
             init(bookedSeats);
 
 
-        //     $('.' + settings.seatCss).click(function () {
-        //      if ($(this).hasClass(settings.selectedSeatCss)){
-        //         alert('This seat is already reserved');
-        //     }
-        //     else{
-        //         $(this).toggleClass(settings.selectingSeatCss);
-        //     }
-        // });
+            $('.' + settings.seatCss).click(function () {
+             if ($(this).hasClass(settings.selectedSeatCss)){
+                alert('This seat is already reserved');
+            }
+            else{
+                $(this).toggleClass(settings.selectingSeatCss);
+            }
+        });
 
         //     $('#btnShow').click(function () {
         //         var str = [];
