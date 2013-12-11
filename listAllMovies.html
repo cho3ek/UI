@@ -44,9 +44,9 @@
 					<div>
 						<ul>
 							<li class="oe_heading">Movies database</li>
-							<li><a href="movie.html">All movies</a></li>
-							<li><a href="movie.html">Latest</a></li>
-							<li><a href="movie.html">Coming soon</a></li>
+							<li><a href="listAllMovies.html">All movies</a></li>
+							<li><a href="byGenre.html">By Genre</a></li>
+							<li><a href="byDirector.html">By Director</a></li>
 						</ul>
 						
 					</div>
@@ -56,7 +56,7 @@
 						<ul>
 							<li class="oe_heading">Theatres in Madrid!</li>
 							<li><a href="map.html">View a map</a></li>
-							<li><a href="movieTheater.html">View a list</a></li>
+							<li><a href="listAllTheaters.html">View a list</a></li>
 						</ul>
 						
 					</div>
@@ -102,7 +102,6 @@
 	
 	
 	
-	
 	<!-- START MAIN WRAPPER WITH CONTENT -->
 	<div class="my-page-wrapper my-page">
 		<div class="my-page-wrap">	
@@ -110,11 +109,32 @@
 				<section id="my-mainbody">
 					<h4>All Available Movies</h4><br>
 
-					<ul id = "list-of-movies">
-						<li><img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" /><a href="movie.html">Thor: The Dark World</a></li>
-						<li><img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" /><a href="movie.html">Captain Phillips</a></li>
-						<li><img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" /><a href="movie.html">Hunger Games: Catching Fire</a></li>
-						<li><img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" /><a href="movie.html">Super Sluts 5 (Granny Edition)</a></li>
+					<ul id = "list-of-movies" style="width:600px">
+						<li style="margin-bottom: 20px; line-height:15px;">
+							<div class="film-info" style="position:relative;overflow:auto">
+								<img src="images/thor_thumbnail.jpg" width="97px" height="100px" alt="" href = "movie.html" style="float:left;margin-right:5px;position:relative"/>
+								<a href="movie.html" style="font-weight: bold">Thor: The Dark World</a><br>
+								<p style="margin-bottom:0px"><b>Cast:</b> Chris Hemsworth, Natalie Portman, Tom Hiddleston<br></p>
+								<p style="margin-bottom:0px"><b>Director:</b> Alan Taylor</p>
+							</div>
+						</li>
+						<li style="margin-bottom: 20px; line-height:15px;">
+							<div class="film-info" style="position:relative;overflow:auto">
+								<img src="images/hungergames_thumbnail.jpg" width="97px" height="100px" alt="" style="float:left;margin-right:5px;position:relative"/>
+								<a href="movie.html" style="font-weight: bold">Hunger Games: Catching Fire</a><br>
+								<p style="margin-bottom:0px"><b>Cast:</b> Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth</br></p>
+								<p style="margin-bottom:0px"><b>Director:</b> Francis Lawrence</p>
+							</div>
+						</li>
+						<li style="margin-bottom: 20px; line-height:15px;">
+							<div class="film-info" style="position:relative;overflow:auto">
+								<img src="images/hobbit_thumbnail.jpg" width="97px" height="100px" alt="" style="float:left;margin-right:5px;position:relative"/>
+								<a href="movie.html" style="font-weight: bold">The Hobbit: The Desolation of Smaug</a><br>
+								<p style="margin-bottom:0px"><b>Cast:</b> Ian McKellen, Martin Freeman, Richard Armitage, Benedict Cumberbatch<br></p>
+								<p style="margin-bottom:0px"><b>Director:</b> Peter Jackson</p>
+							</div>
+						</li>
+
 					</ul>
 
 				</section>
