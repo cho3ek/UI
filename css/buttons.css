@@ -46,6 +46,7 @@
 }
 .grey:hover {
 	border: 1px solid #b0b0b0;
+	cursor: pointer;
 	background-image: -moz-linear-gradient(#e1e1e1, #ededed);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ededed), to(#e1e1e1));
 	background-image: -webkit-linear-gradient(#e1e1e1, #ededed);
@@ -67,6 +68,7 @@
 }
 .red:hover {
 	border: 1px solid #c75964;
+	cursor: pointer;
 	background-image: -moz-linear-gradient(#f6677b, #f997b0);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f997b0), to(#f6677b));
 	background-image: -webkit-linear-gradient(#f6677b, #f997b0);
@@ -88,6 +90,7 @@
 }
 .blue:hover {
 	border: 1px solid #4690ad;
+	cursor: pointer;
 	background-image: -moz-linear-gradient(#73d0f1, #aae5f7);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#aae5f7), to(#73d0f1));
 	background-image: -webkit-linear-gradient(#73d0f1, #aae5f7);
@@ -109,6 +112,7 @@
 }
 .green:hover {
 	border: 1px solid #687e30;
+	cursor: pointer;
 	background-image: -moz-linear-gradient(#a5cb5e, #cae387);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cae387), to(#a5cb5e));
 	background-image: -webkit-linear-gradient(#a5cb5e, #cae387);
@@ -135,6 +139,7 @@
 	background-image: -webkit-linear-gradient(#454545, #656565);
 	background-image: -o-linear-gradient(#454545, #656565);
 	background-color: #656565;
+	cursor: pointer;
 }
 .black:active {border: 1px solid #000;}
 
@@ -156,6 +161,7 @@
 	background-image: -webkit-linear-gradient(#febf4d, #ffd974);
 	background-image: -o-linear-gradient(#febf4d, #ffd974);
 	background-color: #ffd974;
+	cursor: pointer;
 }
 .yellow:active {border: 1px solid #936b26;}
 
@@ -177,6 +183,7 @@
 	background-image: -webkit-linear-gradient(#d798d1, #e9c4e3);
 	background-image: -o-linear-gradient(#d798d1, #e9c4e3);
 	background-color: #e9c4e3;
+	cursor: pointer;
 }
 .purple:active {border: 1px solid #6a4664;}
 
@@ -198,6 +205,7 @@
 	background-image: -webkit-linear-gradient(#8ea5b5, #bbcbd8);
 	background-image: -o-linear-gradient(#8ea5b5, #bbcbd8);
 	background-color: #bbcbd8;
+	cursor: pointer;
 }
 .gblue:active {border: 1px solid #434f5a;}
 

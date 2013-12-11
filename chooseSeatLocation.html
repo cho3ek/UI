@@ -113,22 +113,42 @@
 			<div id="my-mainbody-columns" class="my-content-no-sidebar">	
 				<section id="my-mainbody">
 					
-					<h4> Choose seats by clicking the desired seat location</h4> <br>
+					<h4> Choose seats by clicking the desired seat location:</h4> <br>
+					<div id="screen">
+					SCREEN
+					</div>
+					<div id="rows">
+					A<br/>
+					B<br/>
+					C<br/>
+					D<br/>
+					E<br/>
+					F<br/>
+					G<br/>
+					H<br/>
+					I<br/>
+					</div>
+					
+					
 					<div id="holder"> 
 						<ul  id="place">
 						</ul>    
 					</div>
-					<div style="float:left;"> 
+					
+					<div style="float:right;width:350px;border:6px solid #efefef;margin-top:450px;padding:10px;margin-right:15px;"> 
+						
+						<div id="tickets"></div>
+					</div>
+					
+					<div style="margin-top:500px;"> 
 						<ul id="seatDescription">
-							<li style="background:url('images/available_seat_img.gif') no-repeat scroll 0 0 transparent;">Available Seat</li>
-							<li style="background:url('images/booked_seat_img.gif') no-repeat scroll 0 0 transparent;">Booked Seat</li>
-							<li style="background:url('images/selected_seat_img.gif') no-repeat scroll 0 0 transparent;">Selected Seat</li>
+							<li style="background:url('images/seats/gray.png') no-repeat scroll 0 0 transparent;">Available seats</li>
+							<li style="background:url('images/seats/red.png') no-repeat scroll 0 0 transparent;">Reserved seats</li>
 						</ul>
 					</div>
-					<div style="clear:both;width:100%">
-						<input type="button" id="btnShowNew" value="Show Selected Seats" />
-						<input type="button" id="btnShow" value="Show All" />           
-					</div>
+					
+					
+				
 
 					<!-- This loads the script that creates the chart -->
 					<script src="script/chooseSeats.js"></script>
