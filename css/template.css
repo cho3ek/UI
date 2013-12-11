@@ -525,9 +525,6 @@ a.cssLogo {
 				font-weight:bold;
 			}
 			h2{
-				position:absolute;
-				top:220px;
-				left:50px;
 				font-size:40px;
 				font-weight:normal;
 				/*text-shadow:  0 0 3px #f6ff00, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f6ff00, 0 0 70px #f6ff00, 0 0 80px #f6ff00, 0 0 100px #f6ff00, 0 0 150px #f6ff00;*/}
@@ -763,4 +760,29 @@ a.cssLogo {
   #map-canvas img { /*fixes the distorted image*/
   	max-width: none;
   }
+
+  #mobile-menu{
+	z-index: 6;
+	list-style: none;
+	position: relative;
+	text-transform: uppercase;
+	margin: 23px 0px 0px 40px;
+	padding-right: 20px;
+	float: right;
+	clear: both;
+ }
+  .about-header {
+	position: inherit!important;
+}
+
+.team-wrapper {
+	overflow: hidden;
+}
+
+.team-member {
+	float: left;
+	display: inline;
+	margin-right: 20px;
+	width: 220px;
+}
 

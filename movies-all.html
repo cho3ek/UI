@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
 	<script src="script/modernizr.custom.17475.js"></script>
 	<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="script/responsive-menu.js"></script>
 	
 	
 <link rel="stylesheet" href="css/buttons.css">
@@ -22,21 +24,37 @@
 <body class="home">
 		<!-- HEADER PART WITH TOP USER MENU -->
 	<div id="logo_main">
-		<img src="images/logo.png" class="logo-img" alt="" />
+		<a href="index.html"><img src="images/logo.png" class="logo-img" alt="" style="z-index:7;" /></a>
 			<div id="menu-top">
 				<table>
 					<tr>
 					<td style="width:120px;">Hello <b>John Doe</b> !</td>
-					<td style="width:20px;"><img src="images/icon-account.png" style="width:15px;padding-" alt="" /></td>
+					<td style="width:20px;"><img src="images/icon-account.png" style="width:15px;" alt="" /></td>
 					<td style="width:100px;"><a href="#" class="header-user-info">Your account</a></td>
 
-					<td style="width:20px;"><img src="images/icon-ticket.png" style="width:15px;padding-" alt="" /></td>
+					<td style="width:20px;"><img src="images/icon-ticket.png" style="width:15px;" alt="" /></td>
 					<td><a href="#" class="header-user-info">Your tickets</a></td>
 					</tr>
 				</table>
 			</div>
 		
 			<!-- MAIN MENU -->
+			
+			<!--FOR MOBILES-->
+				<div class="oe_wrapper_mobile" style="display:none;">
+					<ul id="mobile-menu">
+					<table style="width:100%">
+					<tr><td style="width:50%;">
+						<a href="movies-all.html" style="background-color:#fff;">Movies</a></td><td><a href="book-1-what-where-when.html" style="background-color:#fff;">Book a ticket</a>
+					</td></tr>
+					<tr><td style="width:50%;">
+					<a href="theaters-all.html" style="background-color:#fff;">Theaters</a></td><td><a href="info-pages.html" style="background-color:#fff;">Info pages</a>
+					</td></tr>
+					</table>
+					</ul>
+				</div>
+			<!--END FOR MOBILES-->
+			
 		<div class="oe_wrapper">
 			<div id="oe_overlay" class="oe_overlay"></div>
 			<ul id="oe_menu" class="oe_menu">
@@ -75,7 +93,6 @@
 		
 		
         <!-- START SCRIPTS FOR MENU -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
         <script type="text/javascript" src="script/menu.js"></script>
 		<!-- END SCRIPTS FOR MENU -->
 		
