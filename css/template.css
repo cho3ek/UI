@@ -764,3 +764,18 @@ a.cssLogo {
   	max-width: none;
   }
 
+  .about-header {
+	position: inherit!important;
+}
+
+.team-wrapper {
+	overflow: hidden;
+}
+
+.team-member {
+	float: left;
+	display: inline;
+	margin-right: 20px;
+	width: 220px;
+}
+
