@@ -1,4 +1,4 @@
-    function initializeMap() {
+﻿    function initializeMap() {
 
     	var geocoder = new google.maps.Geocoder();
     	var LatLng = new google.maps.LatLng(40.420, -3.6833);
@@ -19,7 +19,7 @@
     		position: new google.maps.LatLng(40.414449,-3.703716)
     	});
 
-    	var contentString1 = '<h3>Yelmo Cinemas Ideal 3D</h3>'+'<p><a href="movieTheater.html"> Click here to see showtimes for this theater</a></p>';
+    	var contentString1 = '<h3>Yelmo Cinemas Ideal 3D</h3>'+'<p><a href="theater.html"> Click here to see showtimes for this theater</a></p>';
 
     	var infowindow = new google.maps.InfoWindow({
     		content: contentString1,
@@ -38,7 +38,7 @@
     		position: new google.maps.LatLng(40.4193268,-3.7085891)
     	});
 
-    	var contentString2 = '<h3>Palacio de la Prensa</h3>'+'<p><a href="movieTheater.html"> Click here to see showtimes for this theater</a></p>';
+    	var contentString2 = '<h3>Palacio de la Prensa</h3>'+'<p><a href="theater.html"> Click here to see showtimes for this theater</a></p>';
 
     	var infowindow2 = new google.maps.InfoWindow({
     		content: contentString2,
@@ -57,7 +57,7 @@
             position: new google.maps.LatLng(40.4319572,-3.6972637)
         });
 
-        var contentString3 = '<h3>Cinema Chamberí</h3>'+'<p><a href="movieTheater.html"> Click here to see showtimes for this theater</a></p>';
+        var contentString3 = '<h3>Cinema Chamberí</h3>'+'<p><a href="theater.html"> Click here to see showtimes for this theater</a></p>';
 
         var infowindow3 = new google.maps.InfoWindow({
             content: contentString3,

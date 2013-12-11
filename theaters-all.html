@@ -20,10 +20,10 @@
 	
 
 <body class="home">
-	<!-- HEADER PART WITH TOP USER MENU -->
+		<!-- HEADER PART WITH TOP USER MENU -->
 	<div id="logo_main">
-		<img src="images/logo.png" style="float:left;position:absolute;margin-top:25px;" alt="" />
-			<div style="float:right;font-size:12px;color:#ffffff;z-index:9;position:relative;">
+		<img src="images/logo.png" class="logo-img" alt="" />
+			<div id="menu-top">
 				<table>
 					<tr>
 					<td style="width:120px;">Hello <b>John Doe</b> !</td>
@@ -36,50 +36,37 @@
 				</table>
 			</div>
 		
-		<!-- MAIN MENU -->
+			<!-- MAIN MENU -->
 		<div class="oe_wrapper">
 			<div id="oe_overlay" class="oe_overlay"></div>
 			<ul id="oe_menu" class="oe_menu">
-				<li><a href="listAllMovies.html">Movies</a>
-					<div>
+				<li><a href="movies-all.html">Movies</a>
+					<div style="height:210px;">
 						<ul>
 							<li class="oe_heading">Movies database</li>
-							<li><a href="listAllMovies.html">All movies</a></li>
-							<li><a href="byGenre.html">By Genre</a></li>
-							<li><a href="byDirector.html">By Director</a></li>
+							<li><a href="movies-all.html">All movies</a></li>
+							<li><a href="movies-by-genre.html">By Genre</a></li>
+							<li><a href="movies-by-director.html">By Director</a></li>
 						</ul>
 						
 					</div>
 				</li>
-				<li><a href="listAllTheaters.html">Theatres</a>
-					<div style="left:-0px;"><!-- -112px -->
+				<li><a href="theaters-all.html">Theatres</a>
+					<div style="left:-0px;height:180px;"><!-- -112px -->
 						<ul>
 							<li class="oe_heading">Theatres in Madrid!</li>
-							<li><a href="map.html">View a map</a></li>
-							<li><a href="listAllTheaters.html">View a list</a></li>
+							<li><a href="theaters-map.html">View a map</a></li>
+							<li><a href="theaters-all.html">View a list</a></li>
 						</ul>
 						
 					</div>
 				</li>
 				<li><a href="book-1-what-where-when.html">Book a ticket</a>
-					<div style="left:-60px;">
-						<ul>
-							<li class="oe_heading">Buy a ticket online</li>
-						</ul>
-						
+					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
-				<li><a  style="width:120px;" href="">Trailers</a>
-					<div style="left:-95px;">
-						<ul>
-							<li class="oe_heading">View trailers</li>
-							<li><a href="#">2013</a></li>
-							<li><a href="#">2012</a></li>
-							<li><a href="#">2011</a></li>
-							<li><a href="#">Older</a></li>
-							<li><a href="#">All</a></li>
-						</ul>
-						
+				<li><a style="width:120px;" href="info-pages.html">INFO PAGES</a>
+					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
 			</ul>	
@@ -100,46 +87,43 @@
 	
 	
 	
+	
 	<!-- START MAIN WRAPPER WITH CONTENT -->
 	<div class="my-page-wrapper my-page">
 		<div class="my-page-wrap">	
 			<div id="my-mainbody-columns" class="my-content-no-sidebar">	
 				<section id="my-mainbody">
-					<h4>Movies by Genre</h4><br>
-					<h5><b>Action</b></h5><br>
-					<ul id = "list-of-movies" style="margin-bottom:30px;width:600px">
-						<li style="margin-bottom: 20px; line-height:15px;">
-							<div class="film-info" style="position:relative;overflow:auto">
-								<img src="images/thor_thumbnail.jpg" width="97px" height="100px" alt="" href = "movie.html" style="float:left;margin-right:5px;position:relative"/>
-								<a href="movie.html" style="font-weight: bold">Thor: The Dark World</a><br>
-								<p style="margin-bottom:0px"><b>Cast:</b> Chris Hemsworth, Natalie Portman, Tom Hiddleston<br></p>
-								<p style="margin-bottom:0px"><b>Director:</b> Alan Taylor</p>
+					<h4>All Available Movie Theaters</h4><br>
+					<ul id = "list-of-movies" style="max-width:1100px;font-family:'Open Sans';">
+						<li style="margin-bottom: 20px; line-height:15px;background-color:#ededed;padding:15px;">
+							<div class="film-info" style="position:relative;overflow:auto;">
+								<img src="images/movieTheaters/cine1.jpg" alt="" style="max-width:250px; float:left;margin-right:25px;position:relative"/>
+								<br/><a href="theater.html" style="font-weight: bold;font-size:30px;">Yelmo Cinemas Ideal 3D</a><br>
+								<p style="margin-bottom:0px"><b>Location:</b> Plaza de Jacinto Benavente<br></p>
+								<p style="margin-bottom:0px"><b>Phone Number:</b> +34 902 22 09 22</p>
+								<a href="theater.html"><div class="button black" style="max-width:230px;margin-top:20px;float:left;">DECRIPTION AND SHOWTIMES</div></a>
+								
 							</div>
 						</li>
-					</ul>
-					<hr style="margin-bottom: 30px;margin-left: 20%;margin-right:20%;">					
-					<ul id = "list-of-movies" style="margin-bottom:30px;width:600px">
-						<h5><b>Drama</b></h5><br>
-						<li style="margin-bottom: 20px; line-height:15px;">
-							<div class="film-info" style="position:relative;overflow:auto">
-								<img src="images/hungergames_thumbnail.jpg" width="97px" height="100px" alt="" style="float:left;margin-right:5px;position:relative"/>
-								<a href="movie.html" style="font-weight: bold">Hunger Games: Catching Fire</a><br>
-								<p style="margin-bottom:0px"><b>Cast:</b> Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth</br></p>
-								<p style="margin-bottom:0px"><b>Director:</b> Francis Lawrence</p>
+						<li style="margin-bottom: 20px; line-height:15px;padding:15px;">
+							<div class="film-info" style="position:relative;overflow:auto;padding-top:20px;">
+								<img src="images/movieTheaters/palacio.jpg" alt="" style="max-width:250px; float:left;margin-right:25px;position:relative;"/>
+								<br/><a href="theater.html" style="font-weight: bold;font-size:30px;">Palacio de la Prensa</a><br>
+								<p style="margin-bottom:0px"><b>Location:</b> Plaza de Callao, 4</br></p>
+								<p style="margin-bottom:0px"><b>Phone Number:</b> +34 915 21 99 00</p>
+								<a href="theater.html"><div class="button black" style="max-width:230px;margin-top:20px;float:left;">DECRIPTION AND SHOWTIMES</div></a>
 							</div>
 						</li>
-					</ul>
-					<hr style="margin-bottom: 30px;margin-left: 20%;margin-right:20%;">					
-					<ul id = "list-of-movies" style="margin-bottom:30px;width:600px">
-						<h5><b>Romance</b></h5><br>
-						<li style="margin-bottom: 20px; line-height:15px;">
-							<div class="film-info" style="position:relative;overflow:auto">
-								<img src="images/hobbit_thumbnail.jpg" width="97px" height="100px" alt="" style="float:left;margin-right:5px;position:relative"/>
-								<a href="movie.html" style="font-weight: bold">The Hobbit: The Desolation of Smaug</a><br>
-								<p style="margin-bottom:0px"><b>Cast:</b> Ian McKellen, Martin Freeman, Richard Armitage, Benedict Cumberbatch<br></p>
-								<p style="margin-bottom:0px"><b>Director:</b> Peter Jackson</p>
+						<li style="margin-bottom: 20px; line-height:15px;background-color:#ededed;padding:15px;">
+							<div class="film-info" style="position:relative;overflow:auto;padding-top:20px;">
+								<img src="images/movieTheaters/palafox.jpg" alt="" style="max-width:250px; float:left;margin-right:25px;position:relative;"/>
+								<br/><a href="theater.html" style="font-weight: bold;font-size:30px;">Palafox</a><br>
+								<p style="margin-bottom:0px"><b>Location:</b> Calle de Luchana, 15<br></p>
+								<p style="margin-bottom:0px"><b>Phone Number:</b> +34 915 93 87 27</p>
+								<a href="theater.html"><div class="button black" style="max-width:230px;margin-top:20px;float:left;">DECRIPTION AND SHOWTIMES</div></a>
 							</div>
 						</li>
+
 					</ul>
 
 				</section>

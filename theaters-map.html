@@ -12,18 +12,26 @@
 	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
 	<script src="script/modernizr.custom.17475.js"></script>
 	<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen"/>
-	
-	
-<link rel="stylesheet" href="css/buttons.css">
+
+	<!-- FOR THE MAP -->
+
+	<link rel="stylesheet" href="css/map.css">
+	<script type="text/javascript"src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+
+    <script type="text/javascript" src="script/map.js"></script>
+
+
+
 
 </head>
 	
 
 <body class="home">
-	<!-- HEADER PART WITH TOP USER MENU -->
+		<!-- HEADER PART WITH TOP USER MENU -->
 	<div id="logo_main">
-		<img src="images/logo.png" style="float:left;position:absolute;margin-top:25px;" alt="" />
-			<div style="float:right;font-size:12px;color:#ffffff;z-index:9;position:relative;">
+		<img src="images/logo.png" class="logo-img" alt="" />
+			<div id="menu-top">
 				<table>
 					<tr>
 					<td style="width:120px;">Hello <b>John Doe</b> !</td>
@@ -36,55 +44,43 @@
 				</table>
 			</div>
 		
-		<!-- MAIN MENU -->
+			<!-- MAIN MENU -->
 		<div class="oe_wrapper">
 			<div id="oe_overlay" class="oe_overlay"></div>
 			<ul id="oe_menu" class="oe_menu">
-				<li><a href="listAllMovies.html">Movies</a>
-					<div>
+				<li><a href="movies-all.html">Movies</a>
+					<div style="height:210px;">
 						<ul>
 							<li class="oe_heading">Movies database</li>
-							<li><a href="listAllMovies.html">All movies</a></li>
-							<li><a href="byGenre.html">By Genre</a></li>
-							<li><a href="byDirector.html">By Director</a></li>
+							<li><a href="movies-all.html">All movies</a></li>
+							<li><a href="movies-by-genre.html">By Genre</a></li>
+							<li><a href="movies-by-director.html">By Director</a></li>
 						</ul>
 						
 					</div>
 				</li>
-				<li><a href="listAllTheaters.html">Theatres</a>
-					<div style="left:-0px;"><!-- -112px -->
+				<li><a href="theaters-all.html">Theatres</a>
+					<div style="left:-0px;height:180px;"><!-- -112px -->
 						<ul>
 							<li class="oe_heading">Theatres in Madrid!</li>
-							<li><a href="map.html">View a map</a></li>
-							<li><a href="listAllTheaters.html">View a list</a></li>
+							<li><a href="theaters-map.html">View a map</a></li>
+							<li><a href="theaters-all.html">View a list</a></li>
 						</ul>
 						
 					</div>
 				</li>
 				<li><a href="book-1-what-where-when.html">Book a ticket</a>
-					<div style="left:-60px;">
-						<ul>
-							<li class="oe_heading">Buy a ticket online</li>
-						</ul>
-						
+					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
-				<li><a  style="width:120px;" href="">Trailers</a>
-					<div style="left:-95px;">
-						<ul>
-							<li class="oe_heading">View trailers</li>
-							<li><a href="#">2013</a></li>
-							<li><a href="#">2012</a></li>
-							<li><a href="#">2011</a></li>
-							<li><a href="#">Older</a></li>
-							<li><a href="#">All</a></li>
-						</ul>
-						
+				<li><a style="width:120px;" href="info-pages.html">INFO PAGES</a>
+					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
 			</ul>	
 		</div>
 		<!-- END OF MAIN MENU -->
+		
 		
 		
         <!-- START SCRIPTS FOR MENU -->
@@ -96,57 +92,19 @@
 	</div>
 	<!-- END OF HEADER PART -->
 	
-	
-	
-	
+
 	
 	
 	<!-- START MAIN WRAPPER WITH CONTENT -->
 	<div class="my-page-wrapper my-page">
-		<div class="my-page-wrap">	
-			<div id="my-mainbody-columns" class="my-content-no-sidebar">	
-				<section id="my-mainbody">
-					<h4>All Available Movie Theaters</h4><br>
-					<ul id = "list-of-movies" style="width:600px">
-						<li style="margin-bottom: 20px; line-height:15px;">
-							<div class="film-info" style="position:relative;overflow:auto">
-								<img src="images/movieTheaters/cine1.jpg" width="170px" height="175px" alt="" href = "movie.html" style="float:left;margin-right:5px;position:relative"/>
-								<a href="movieTheater.html" style="font-weight: bold">Yelmo Cinemas Ideal 3D</a><br>
-								<p style="margin-bottom:0px"><b>Location:</b> Plaza de Jacinto Benavente<br></p>
-								<p style="margin-bottom:0px"><b>Phone Number:</b> +34 902 22 09 22</p>
-							</div>
-						</li>
-						<li style="margin-bottom: 20px; line-height:15px;">
-							<div class="film-info" style="position:relative;overflow:auto">
-								<img src="images/movieTheaters/palacio.jpg" width="170px" height="175px" alt="" style="float:left;margin-right:5px;position:relative"/>
-								<a href="movieTheater.html" style="font-weight: bold">Palacio de la Prensa</a><br>
-								<p style="margin-bottom:0px"><b>Location:</b> Plaza de Callao, 4</br></p>
-								<p style="margin-bottom:0px"><b>Phone Number:</b> +34 915 21 99 00</p>
-							</div>
-						</li>
-						<li style="margin-bottom: 20px; line-height:15px;">
-							<div class="film-info" style="position:relative;overflow:auto">
-								<img src="images/movieTheaters/palafox.jpg" width="170px" height="175px" alt="" style="float:left;margin-right:5px;position:relative"/>
-								<a href="movieTheater.html" style="font-weight: bold">Palafox</a><br>
-								<p style="margin-bottom:0px"><b>Location:</b> Calle de Luchana, 15<br></p>
-								<p style="margin-bottom:0px"><b>Phone Number:</b> +34 915 93 87 27</p>
-							</div>
-						</li>
-
-					</ul>
-
-				</section>
-			</div>
-		
+		<div class="my-page-wrap">
+			<h3>Choose a theater near you...</h3><br>
+			<div class="map_container">
+				<div id="map-canvas"></div>
+			</div>	
+		</div>
 		
 		<div style="clear:both;"><p>&nbsp;</p></div>
-		
-		
-		
-		
-<div style="clear:both;"><p>&nbsp;</p></div>
-		
-		</div>
 		
 		<!--START FOOTER -->
 		<div id="my-bottom1">

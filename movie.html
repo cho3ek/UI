@@ -20,10 +20,10 @@
 	
 
 <body class="home">
-	<!-- HEADER PART WITH TOP USER MENU -->
+		<!-- HEADER PART WITH TOP USER MENU -->
 	<div id="logo_main">
-		<img src="images/logo.png" style="float:left;position:absolute;margin-top:25px;" alt="" />
-			<div style="float:right;font-size:12px;color:#ffffff;z-index:9;position:relative;">
+		<img src="images/logo.png" class="logo-img" alt="" />
+			<div id="menu-top">
 				<table>
 					<tr>
 					<td style="width:120px;">Hello <b>John Doe</b> !</td>
@@ -36,50 +36,37 @@
 				</table>
 			</div>
 		
-		<!-- MAIN MENU -->
+			<!-- MAIN MENU -->
 		<div class="oe_wrapper">
 			<div id="oe_overlay" class="oe_overlay"></div>
 			<ul id="oe_menu" class="oe_menu">
-				<li><a href="listAllMovies.html">Movies</a>
-					<div>
+				<li><a href="movies-all.html">Movies</a>
+					<div style="height:210px;">
 						<ul>
 							<li class="oe_heading">Movies database</li>
-							<li><a href="listAllMovies.html">All movies</a></li>
-							<li><a href="byGenre.html">By Genre</a></li>
-							<li><a href="byDirector.html">By Director</a></li>
+							<li><a href="movies-all.html">All movies</a></li>
+							<li><a href="movies-by-genre.html">By Genre</a></li>
+							<li><a href="movies-by-director.html">By Director</a></li>
 						</ul>
 						
 					</div>
 				</li>
-				<li><a href="listAllTheaters.html">Theatres</a>
-					<div style="left:-0px;"><!-- -112px -->
+				<li><a href="theaters-all.html">Theatres</a>
+					<div style="left:-0px;height:180px;"><!-- -112px -->
 						<ul>
 							<li class="oe_heading">Theatres in Madrid!</li>
-							<li><a href="map.html">View a map</a></li>
-							<li><a href="listAllTheaters.html">View a list</a></li>
+							<li><a href="theaters-map.html">View a map</a></li>
+							<li><a href="theaters-all.html">View a list</a></li>
 						</ul>
 						
 					</div>
 				</li>
 				<li><a href="book-1-what-where-when.html">Book a ticket</a>
-					<div style="left:-60px;">
-						<ul>
-							<li class="oe_heading">Buy a ticket online</li>
-						</ul>
-						
+					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
-				<li><a  style="width:120px;" href="">Trailers</a>
-					<div style="left:-95px;">
-						<ul>
-							<li class="oe_heading">View trailers</li>
-							<li><a href="#">2013</a></li>
-							<li><a href="#">2012</a></li>
-							<li><a href="#">2011</a></li>
-							<li><a href="#">Older</a></li>
-							<li><a href="#">All</a></li>
-						</ul>
-						
+				<li><a style="width:120px;" href="info-pages.html">INFO PAGES</a>
+					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
 			</ul>	
@@ -138,18 +125,16 @@
 		
 		<div style="clear:both;"><p>&nbsp;</p></div>
 		<img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" />
-		<h4>Photos and videos</h4><br/>
+		<h4>Official trailer</h4><br/>
 		
 	
+		<iframe src="http://player.vimeo.com/video/64703282?byline=0&amp;portrait=0&title=0amp;color=ffffff" width="1000" height="567" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		
-		
-		
-		
-		
+		<p>&nbsp;</p>
+		<h4>Photos and screens</h4><br/>
 		<div class="fixed-bar demo-3">
 		<ul id="carousel" class="elastislide-list">
 						<li style="max-width:393px!important;"><a href="#"><img src="images/movies/thor/small/1.jpg" alt="image01" /></a></li>
-						<li style="max-width:453px!important;"><a href="#"><div id="ytplayer"></div></a></li>
 						<li style="max-width:393px!important;"><a href="#"><img src="images/movies/thor/small/2.jpg" alt="image02" /></a></li>
 						<li style="max-width:493px!important;"><a href="#"><img src="images/movies/thor/small/3.jpg" alt="image03" /></a></li>
 					</ul>
@@ -165,28 +150,7 @@
 					<!-- END OF SCRIPTS -->
 					
 					
-					
-
-<script>
-  // Load the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/player_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  // Replace the 'ytplayer' element with an <iframe> and
-  // YouTube player after the API code downloads.
-  var player;
-  function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer', {
-      height: '228',
-      width: '423',
-	  playerVars: { 'autoplay': 0, 'rel': 0, 'showinfo': 1 },
-      videoId: 'npvJ9FTgZbM'
-    });
-  }
-</script>
-
+	
 
 
 

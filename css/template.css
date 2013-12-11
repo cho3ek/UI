@@ -17,7 +17,7 @@ body {
 	line-height: 1.6;
 	margin: 0;
 	min-height: 100%;
-	padding: 10px 0 100px 0;
+	padding: 10px 0 30px 0;
 	word-wrap: break-word;
 }
 
@@ -175,7 +175,14 @@ article {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding: 30px 50px;
+	padding: 30px 20px;
+	max-width:1130px;
+	margin: 0 auto;
+}
+
+.area {
+	margin: 0 auto;
+	max-width: 1080px;
 }
 
 .my-page {
@@ -183,7 +190,7 @@ article {
 	margin-top:140px;
 	width: 100%; 
 	opacity:0.95;
-	max-width: 1100px;
+	max-width: 100%;
 	filter:alpha(opacity=95);
 }
 
@@ -392,12 +399,20 @@ a.cssLogo {
 .area .col6 { width: 16.6%; }
 
 
+.logo-img {
+	float:left;
+	position:absolute;
+	margin-top:25px;
+	padding-left:20px;
+}
 
 
 #my-mainbody-columns {
 	background: #fff;
 	display: block;
 	float:left;
+	width: 100%;
+	max-width: 1110px;
 }
 
 
@@ -449,9 +464,11 @@ a.cssLogo {
 
 
 #logo_main {
-	max-width:1100px;
+	max-width:1140px;
 	margin: 0 auto;
 }
+
+
 
 .header-user-info{
 	color:#fff;
@@ -561,4 +578,12 @@ a.cssLogo {
 .comment-date {
 	color:#888;
 	font-size:12px;
+}
+
+.icons img{
+	opacity: 0.8;
+}
+
+.icons img:hover{
+	opacity: 1;
 }

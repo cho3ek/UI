@@ -1,0 +1,314 @@
+<!DOCTYPE html 
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>UI movies - best reviews, best galleries, best movie website ever!</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/template.css">
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+	<script src="script/modernizr.custom.17475.js"></script>
+	<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/movieTheater.css" type="text/css"/>	
+	
+<link rel="stylesheet" href="css/buttons.css">
+<script src="script/modernizr-min.js"></script>
+<script src="script/form-check.js"></script>
+
+<!-- CSS for the seat selector, js for the selector after html-->
+<link rel="stylesheet" href="css/chooseSeats.css" type="text/css"/>
+
+</head>
+	
+
+<body class="home">
+		<!-- HEADER PART WITH TOP USER MENU -->
+	<div id="logo_main">
+		<img src="images/logo.png" class="logo-img" alt="" />
+			<div id="menu-top">
+				<table>
+					<tr>
+					<td style="width:120px;">Hello <b>John Doe</b> !</td>
+					<td style="width:20px;"><img src="images/icon-account.png" style="width:15px;padding-" alt="" /></td>
+					<td style="width:100px;"><a href="#" class="header-user-info">Your account</a></td>
+
+					<td style="width:20px;"><img src="images/icon-ticket.png" style="width:15px;padding-" alt="" /></td>
+					<td><a href="#" class="header-user-info">Your tickets</a></td>
+					</tr>
+				</table>
+			</div>
+		
+			<!-- MAIN MENU -->
+		<div class="oe_wrapper">
+			<div id="oe_overlay" class="oe_overlay"></div>
+			<ul id="oe_menu" class="oe_menu">
+				<li><a href="movies-all.html">Movies</a>
+					<div style="height:210px;">
+						<ul>
+							<li class="oe_heading">Movies database</li>
+							<li><a href="movies-all.html">All movies</a></li>
+							<li><a href="movies-by-genre.html">By Genre</a></li>
+							<li><a href="movies-by-director.html">By Director</a></li>
+						</ul>
+						
+					</div>
+				</li>
+				<li><a href="theaters-all.html">Theatres</a>
+					<div style="left:-0px;height:180px;"><!-- -112px -->
+						<ul>
+							<li class="oe_heading">Theatres in Madrid!</li>
+							<li><a href="theaters-map.html">View a map</a></li>
+							<li><a href="theaters-all.html">View a list</a></li>
+						</ul>
+						
+					</div>
+				</li>
+				<li><a href="book-1-what-where-when.html">Book a ticket</a>
+					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
+					</div>
+				</li>
+				<li><a style="width:120px;" href="info-pages.html">INFO PAGES</a>
+					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
+					</div>
+				</li>
+			</ul>	
+		</div>
+		<!-- END OF MAIN MENU -->
+		
+		
+        <!-- START SCRIPTS FOR MENU -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        <script type="text/javascript" src="script/menu.js"></script>
+		<!-- END SCRIPTS FOR MENU -->
+		
+		
+	</div>
+	<!-- END OF HEADER PART -->
+	
+	
+	
+	
+	
+	
+	<!-- START MAIN WRAPPER WITH CONTENT -->
+	<div class="my-page-wrapper my-page">
+		<div class="my-page-wrap">	
+			<div id="my-mainbody-columns" class="my-content-no-sidebar">	
+				<section id="my-mainbody">
+				
+				<table style="width:100%;">
+					<tr>
+					<td><img src="images/booking/1.png" style="opacity:0.15" /></td>
+					<td><img src="images/booking/2.png" style="opacity:0.15" /></td>
+					<td><img src="images/booking/3.png" /></td>
+					</tr>
+					</table>
+				<p>&nbsp;</p>
+				
+				<div style="float:left;height: 400px;">
+				<img style="padding-right:50px;" src="images/booking/checkout.jpg" alt=""/><br/>
+				<img style="padding-right:50px;" src="images/booking/account.png" alt=""/></div>
+				<div style="flaot:left;">
+					<h3> To book tickets, please fill a form below:</h3><small>All fields are required!</small><br/>
+				
+				<span id="message" class="message" style="color:red;font-size:12px;"></span><br/>
+        <table>
+        <form action="book-4-ticket.html" method="post" id="newUser" style="margin-left:30px;">
+        <tr><td style="width:150px;"><b>Name:</b></td><td><input type="text" id="name" name="name" value="" /></td></tr>
+        <tr><td><b>Surname:</b></td><td><input type="text" id="surname" name="surname" value=""/><br/>&nbsp;<br/></td></tr>
+        <tr><td><b>Email:</b></td><td><input type="text" id="newEmail" name="newEmail" value=""/></td></tr>
+        <tr><td><b>Confirm email:</b>
+                        </td><td><input type="text" name="newEmail2" id="newEmail2" value="" /><br/>&nbsp;<br/></td></tr>
+        <tr><td><b>Phone number:</b></td> <td><input type="text" id="phone" name="phone" value=""/></td></tr>
+        <tr><td><b>Address:</b></td> <td><input type="text" name="address" id="address" style="width:300px;"value=""/><br/></td></tr>
+        <tr><td><b>Create account?:</b></td> <td><input type="checkbox" name="address" id="address" /><br/></td></tr>
+        <tr><td> </td> <td><br/><input type="button" class="button black" value="Book tickets" onClick="checkPass();submitForm();" /><br/></td></tr>
+        </table>
+        </form>
+        
+        <script type="text/javascript">
+        var errorCount;
+        
+        function checkPass()
+        { 
+        var goodColor = "#66cc66";
+    var badColor = "#ff6666";
+    var withoutColor = "#ffffff";
+    errorCount = 0;
+        var name = document.getElementById('name');
+        var surname = document.getElementById('surname');
+        var newEmail = document.getElementById('newEmail');
+        var atPosition = newEmail.value.indexOf("@");
+        var dotPosition = newEmail.value.lastIndexOf(".");
+    var newemail2 = document.getElementById('newEmail2');
+        var phone = document.getElementById('phone');
+        var address = document.getElementById('address'); 
+        var message  = document.getElementById('message');
+        message.innerHTML = ""; 
+        
+        if(name.value.length < 2) {
+                name.style.backgroundColor = badColor; 
+                name.style.color = "#fff";
+                errorCount++;
+                message.innerHTML += "Name field error! Minimum <b>2 signs!</b><br/>";
+        } else {
+                name.style.backgroundColor = withoutColor;
+                   name.style.color = "#9d9d9d";
+                   }
+        
+        if(surname.value.length < 2) {
+                surname.style.backgroundColor = badColor; 
+                surname.style.color = "#fff";
+                errorCount++;
+                message.innerHTML += "Surname field error! Minimum <b>2 signs!</b><br/>";
+        } else {
+                surname.style.backgroundColor = withoutColor;
+                   surname.style.color = "#9d9d9d";
+                   }
+        
+
+        
+        if(phone.value.length < 6) {
+                phone.style.backgroundColor = badColor; 
+                phone.style.color = "#fff";
+                errorCount++;
+                message.innerHTML += "Phone field error! Minimum <b>6 signs!</b><br/>";
+        } else {
+                phone.style.backgroundColor = withoutColor;
+                   phone.style.color = "#9d9d9d";
+                }
+        
+        if(address.value.length < 10) {
+                address.style.backgroundColor = badColor; 
+                address.style.color = "#fff";
+                errorCount++;
+                message.innerHTML += "Address field error! Minimum <b>10 signs!</b><br/>";
+        } else {
+                address.style.backgroundColor = withoutColor;
+                   address.style.color = "#9d9d9d";
+                   }
+        
+        if(newEmail.value == "" || newEmail2.value =="") {
+       newEmail.style.backgroundColor = badColor; 
+        newEmail2.style.backgroundColor = badColor; 
+       newEmail.style.color = "#fff";
+        newEmail2.style.color = "#fff";
+        errorCount++;
+        //message.innerHTML += "Passwords are empty!<br/>";
+    }
+    if(newEmail.value != newEmail2.value) {
+       newEmail.style.backgroundColor = badColor; 
+        newEmail2.style.backgroundColor = badColor; 
+       newEmail.style.color = "#fff";
+        newEmail2.style.color = "#fff";
+        errorCount++;
+        message.innerHTML += "Emails are not the same!<br/>";
+    }
+    else if(newEmail.value == newEmail2.value && newEmail.value != "" && newEmail2.value !=""){ 
+    newEmail.style.backgroundColor = withoutColor;  
+    newEmail2.style.backgroundColor = withoutColor;
+    newEmail.style.color = "#9d9d9d";
+   newEmail2.style.color = "#9d9d9d";
+    }
+	
+	
+	        if(atPosition < 1 || dotPosition < atPosition+2 || dotPosition+2 > newEmail.value.length) {
+                newEmail.style.backgroundColor = badColor;  
+                newEmail.style.color = "#fff"; 
+                errorCount++;
+                message.innerHTML += "Email empty or in wrong format<br/>";
+        } else {
+                newEmail.style.backgroundColor = withoutColor;  
+                   newEmail.style.color = "#9d9d9d"; 
+                   }
+				   
+				   
+}
+    
+function submitForm(){ 
+        if(errorCount==0)
+                   document.getElementById('newUser').submit();
+} 
+    
+    
+    </script>
+	
+</div>
+				
+				
+				
+						
+						
+						
+					</div>
+					
+					<div style="text-align:center;clear:both;max-width:970px;">
+					<p>&nbsp;</p>
+						<a href="book-2-choose-a-sit.html" class="nav-booking"><img src="images/booking/prev-2.png" alt="" /></a>
+					</div>
+				
+				
+
+
+
+				</section>	
+			
+		</div>
+		
+		<div style="clear:both;"><p>&nbsp;</p></div>
+
+		
+		<!--START FOOTER -->
+		<div id="my-bottom1">
+			<div class="area">
+				<div class="box col2">
+					<h3 class="box-title"><strong>USER INTERFACES</strong></h3>
+					<div class="textwidget">
+						<address>
+							<p><b>Universidad Carlos III de Madrid</b></p>
+							<p>Project: <i>User Interfaces</i></p>
+							<p>Av de la Universidad, 30</p>
+							<p>Leganés, España</p>
+							<p>(+34) 916 24 95 00</p>
+						</address>
+					</div>
+				</div>
+				<div class="box col6">
+					<h3 class="box-title">About Us</h3>
+					<div class="textwidget">
+						<ul>
+							<li><a href="#">Who are we?</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box col6">
+					<h3 class="box-title">Service</h3>
+					<div class="textwidget">
+						<ul>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Book tickets</a></li>
+							<li><a href="#">Find your theatre</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box col6">
+					<h3 class="box-title">Connect</h3>
+						<div class="textwidget">
+							<ul>
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Google+</a></li>
+							</ul>
+						</div>
+				</div>	
+			</div>
+		</div>
+		<!--END FOOTER -->
+	</div>
+	<!-- END WRAPPER -->
+</body>
+</html>

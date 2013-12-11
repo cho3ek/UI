@@ -21,10 +21,10 @@
 	
 
 <body class="home">
-	<!-- HEADER PART WITH TOP USER MENU -->
+		<!-- HEADER PART WITH TOP USER MENU -->
 	<div id="logo_main">
-		<img src="images/logo.png" style="float:left;position:absolute;margin-top:25px;" alt="" />
-			<div style="float:right;font-size:12px;color:#ffffff;z-index:9;position:relative;">
+		<img src="images/logo.png" class="logo-img" alt="" />
+			<div id="menu-top">
 				<table>
 					<tr>
 					<td style="width:120px;">Hello <b>John Doe</b> !</td>
@@ -37,50 +37,37 @@
 				</table>
 			</div>
 		
-		<!-- MAIN MENU -->
+			<!-- MAIN MENU -->
 		<div class="oe_wrapper">
 			<div id="oe_overlay" class="oe_overlay"></div>
 			<ul id="oe_menu" class="oe_menu">
-				<li><a href="listAllMovies.html">Movies</a>
-					<div>
+				<li><a href="movies-all.html">Movies</a>
+					<div style="height:210px;">
 						<ul>
 							<li class="oe_heading">Movies database</li>
-							<li><a href="listAllMovies.html">All movies</a></li>
-							<li><a href="byGenre.html">By Genre</a></li>
-							<li><a href="byDirector.html">By Director</a></li>
+							<li><a href="movies-all.html">All movies</a></li>
+							<li><a href="movies-by-genre.html">By Genre</a></li>
+							<li><a href="movies-by-director.html">By Director</a></li>
 						</ul>
 						
 					</div>
 				</li>
-				<li><a href="listAllTheaters.html">Theatres</a>
-					<div style="left:-0px;"><!-- -112px -->
+				<li><a href="theaters-all.html">Theatres</a>
+					<div style="left:-0px;height:180px;"><!-- -112px -->
 						<ul>
 							<li class="oe_heading">Theatres in Madrid!</li>
-							<li><a href="map.html">View a map</a></li>
-							<li><a href="listAllTheaters.html">View a list</a></li>
+							<li><a href="theaters-map.html">View a map</a></li>
+							<li><a href="theaters-all.html">View a list</a></li>
 						</ul>
 						
 					</div>
 				</li>
 				<li><a href="book-1-what-where-when.html">Book a ticket</a>
-					<div style="left:-60px;">
-						<ul>
-							<li class="oe_heading">Buy a ticket online</li>
-						</ul>
-						
+					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
-				<li><a  style="width:120px;" href="">Trailers</a>
-					<div style="left:-95px;">
-						<ul>
-							<li class="oe_heading">View trailers</li>
-							<li><a href="#">2013</a></li>
-							<li><a href="#">2012</a></li>
-							<li><a href="#">2011</a></li>
-							<li><a href="#">Older</a></li>
-							<li><a href="#">All</a></li>
-						</ul>
-						
+				<li><a style="width:120px;" href="info-pages.html">INFO PAGES</a>
+					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
 			</ul>	
@@ -123,7 +110,7 @@
 						</p>	
 					</div>
 					<div style="clear:both;"><p>&nbsp;</p></div>
-					<img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" /><h4>Movies and Showtimes Available At This Theater</h4> <br> <br>
+					<img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" /><h4>Movies and Showtimes Available At This Theater</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click on a showtime to make a ticket reservation <br>&nbsp;<br/>
 					<div class = "movie-showtime-wrapper">
 						<div class = "movie-title">
 							<a href="#"><b>Thor: The Dark World</b></a> <br>
@@ -131,16 +118,16 @@
 							Click Showtime to Buy Tickets
 						</div>
 						<div class = "movie-showtime">
-							<a href = "#">5:00p</a>
+							<a href = "book-2-choose-a-sit.html">5:00p</a>
 						</div>	
 						<div class = "movie-showtime">
-							<a href = "#">7:00p</a>
+							<a href = "book-2-choose-a-sit.html">7:00p</a>
 						</div>
 						<div class = "movie-showtime">
-							<a href = "#">9:00p</a>
+							<a href = "book-2-choose-a-sit.html">9:00p</a>
 						</div>	
 						<div class = "movie-showtime">
-							<a href = "#">11:00p</a>
+							<a href = "book-2-choose-a-sit.html">11:00p</a>
 						</div>
 					</div>
 					<div class = "movie-showtime-wrapper">	
@@ -150,16 +137,16 @@
 							Click Showtime to Buy Tickets
 						</div>
 						<div class = "movie-showtime">
-							<a href = "#">5:00p</a>
+							<a href = "book-2-choose-a-sit.html">5:00p</a>
 						</div>	
 						<div class = "movie-showtime">
-							<a href = "#">7:00p</a>
+							<a href = "book-2-choose-a-sit.html">7:00p</a>
 						</div>
 						<div class = "movie-showtime">
-							<a href = "#">9:00p</a>
+							<a href = "book-2-choose-a-sit.html">9:00p</a>
 						</div>	
 						<div class = "movie-showtime">
-							<a href = "#">11:00p</a>
+							<a href = "book-2-choose-a-sit.html">11:00p</a>
 						</div>						
 					</div>	
 
