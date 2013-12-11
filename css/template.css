@@ -587,3 +587,180 @@ a.cssLogo {
 .icons img:hover{
 	opacity: 1;
 }
+
+
+	#place {
+		position:relative;
+		margin:7px;
+	}
+	#place a{
+		font-size:0.6em;
+	}
+	#place li
+	{
+		list-style: none outside none;
+		position: absolute;   
+		line-height: 1.3!important;
+	}    
+	#place li:hover{
+		background-color: #eee;
+		cursor: pointer;
+		-webkit-transition: background-color 0.2s linear;
+		-moz-transition: background-color 0.2s linear;
+		-o-transition: background-color 0.2s linear;
+		transition: background-color 0.2s linear;
+		text-decoration: none;     
+	} 
+	
+	#place .selectedSeat:hover {
+		background-color: #fff;
+		cursor: not-allowed;
+	}
+	#place .seat{
+		background:url("../images/seats/gray.png") no-repeat scroll 0 0 transparent;
+		height:35px;
+		width:35px;
+		display:block;   
+	}
+	#place .selectedSeat
+	{ 
+		background-image:url("../images/seats/red.png");          
+	}
+	#place .selectingSeat
+	{ 
+		background-image:url("../images/seats/green.png");        
+	}
+	#place .col-4, #place .col-5, #place .col-6, #place .col-7, #place .col-8, #place .col-9, #place .col-10, #place .col-11, #place .col-12, #place .col-13, #place .col-14, #place .col-15 {
+		margin-left: 30px;
+	}
+	#place .col-16, #place .col-17, #place .col-18, #place .col-19, #place .col-20{
+		margin-left: 60px;
+	}
+	
+	
+	#seatDescription li{
+		vertical-align:middle;    
+		display: inline;
+		padding-left:40px;
+		margin-right: 30px;
+		margin-left:7px;
+		bottom:20px;
+		height:50px;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	
+	#screen {
+		width:970px;
+		height:70px;
+		background-color:#dadada;
+		text-align:center;
+		padding:5px;
+		font-size:40px;
+		margin-bottom:30px;
+		color:#555;
+	}
+	
+	#rows {
+		width:30px;
+		position:absolute;
+		margin-left:980px;
+		margin-top:-10px;
+		height:410px;
+		background-color:#dadada;
+		text-align:center;
+		padding:5px;
+		font-size:20px;
+		line-height:225%;
+		margin-bottom:30px;
+		color:#555;
+	}
+	
+	.nav-booking {
+		opacity:0.7;
+	}
+	
+	.nav-booking:hover {
+		opacity:1;
+	}
+	
+	#chosen-film {
+		background-color:#ededed;
+		padding:15px;
+	}
+	
+	.styled-select {
+	   width: 240px;
+	   height: 34px;
+	   overflow: hidden;
+	   background: url(../images/seats/down_arrow_select.jpg) no-repeat right #ededed;
+	   border: 1px solid #ddd;
+   }
+   
+   .styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+	
+
+	
+
+.movie-showtime-wrapper {
+	color: #777;
+	height: 70px;
+	width: 75%;
+	overflow: hidden;
+}
+
+.movie-title {
+	color: #777;
+	float: left;
+	padding-right: 40px;
+	height: 100px;
+	line-height:90%
+}
+
+.movie-showtime {
+	text-align: center;
+	background-image: url('../images/showtime_background.png');
+	color: #FFF;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	float: left;
+	margin: 5px;
+	padding-top: 2px;
+	width: 72px;
+	height: 25px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.movie-showtime a {
+	color: #FFF!important;
+}
+
+.movie-showtime a:hover {
+	color: #ff7e57!important;
+}
+
+.review-wrapper {
+	width: 75%;
+}
+
+  #map-canvas { 
+  	height: 400px; 
+  	width: 100%;
+  	color: #000;
+  }
+
+  #map-canvas img { /*fixes the distorted image*/
+  	max-width: none;
+  }
+
