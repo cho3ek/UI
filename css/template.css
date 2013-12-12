@@ -805,3 +805,29 @@ a.cssLogo {
 	color: #dadada;
 	text-decoration:underline!important;
 }
+
+#categories {
+	width:90%;
+	margin-top:-5px;
+	margin-right:15px;
+	border-spacing:5px;
+}
+
+#categories tr {
+	background-color:#efefef;
+	margin-bottom:25px;
+}
+
+#categories td {
+	margin-bottom:25px;
+	padding:10px;
+}
+#categories h4 {
+	color:  #555;
+}
+
+
+#categories tr:hover {
+	background-color:#dadada;
+}
+
