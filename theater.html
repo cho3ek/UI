@@ -49,7 +49,7 @@
 						<a href="movies-all.html" style="background-color:#fff;">Movies</a></td><td><a href="book-1-what-where-when.html" style="background-color:#fff;">Book a ticket</a>
 					</td></tr>
 					<tr><td style="width:50%;">
-					<a href="theaters-all.html" style="background-color:#fff;">Theaters</a></td><td><a href="info-pages.html" style="background-color:#fff;">Info pages</a>
+					<a href="theaters-all.html" style="background-color:#fff;">Theaters</a></td><td><a href="info-pages.html" style="background-color:#fff;">ABOUT US</a>
 					</td></tr>
 					</table>
 					</ul>
@@ -70,7 +70,7 @@
 						
 					</div>
 				</li>
-				<li><a href="theaters-all.html">Theatres</a>
+				<li><a href="theaters-all.html" class="selected">Theatres</a>
 					<div style="left:-0px;height:180px;"><!-- -112px -->
 						<ul>
 							<li class="oe_heading">Theatres in Madrid!</li>
@@ -84,7 +84,7 @@
 					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
-				<li><a style="width:120px;" href="info-pages.html">INFO PAGES</a>
+				<li><a style="width:120px;" href="info-pages.html">ABOUT US</a>
 					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
@@ -111,7 +111,13 @@
 		<div class="my-page-wrap">	
 			<div id="my-mainbody-columns" class="my-content-no-sidebar">	
 				<section id="my-mainbody">
-					<h2>Yelmo Cinemas Ideal 3D</h2><br/>&nbsp;<br/>
+						<p class="you-are-here">
+				<a href="index.html">Home</a> <img src="images/arrow-right.png" style="width:10px;" alt=""/> 
+				<a href="theaters-all.html">All theaters</a> <img src="images/arrow-right.png" style="width:10px;" alt=""/> 
+				<a href="theater.html">Yelmo Cinemas Ideal 3D</a>
+				</p>
+				
+				<h2>Yelmo Cinemas Ideal 3D</h2><br/>&nbsp;<br/>
 					<div style="float:left;">
 						<img src="images/movieTheaters/cine1.jpg" alt="Poster Thor" style="max-width:380px;"/>
 					</div>
@@ -212,7 +218,7 @@
 								//commentText.style.color = "#fff";
 								$("#message").text("");
 								$("#textarea").css("border","1px solid red;");
-								$("#message").prepend("Minimum 25 signs required!<br/>");
+								$("#message").prepend("Minimum 25 characters required!<br/>");
 						} else {
 								//commentText.style.backgroundColor = withoutColor;
 								//commentText.style.color = "#9d9d9d";

@@ -53,7 +53,7 @@
 						<a href="movies-all.html" style="background-color:#fff;">Movies</a></td><td><a href="book-1-what-where-when.html" style="background-color:#fff;">Book a ticket</a>
 					</td></tr>
 					<tr><td style="width:50%;">
-					<a href="theaters-all.html" style="background-color:#fff;">Theaters</a></td><td><a href="info-pages.html" style="background-color:#fff;">Info pages</a>
+					<a href="theaters-all.html" style="background-color:#fff;">Theaters</a></td><td><a href="info-pages.html" style="background-color:#fff;">ABOUT US</a>
 					</td></tr>
 					</table>
 					</ul>
@@ -84,11 +84,11 @@
 						
 					</div>
 				</li>
-				<li><a href="book-1-what-where-when.html">Book a ticket</a>
+				<li><a href="book-1-what-where-when.html" class="selected">Book a ticket</a>
 					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
-				<li><a style="width:120px;" href="info-pages.html">INFO PAGES</a>
+				<li><a style="width:120px;" href="info-pages.html">ABOUT US</a>
 					<div style="width:0px;margin:0;padding:0;height:0px;display:none;">
 					</div>
 				</li>
@@ -115,6 +115,11 @@
 		<div class="my-page-wrap">	
 			<div id="my-mainbody-columns" class="my-content-no-sidebar">	
 				<section id="my-mainbody">
+					<p class="you-are-here">
+				<a href="index.html">Home</a> <img src="images/arrow-right.png" style="width:10px;" alt=""/> 
+				<a href="book-1-what-where-when.html">Booking a ticket</a> <img src="images/arrow-right.png" style="width:10px;" alt=""/> 
+				<a href="book-3-checkout.html">Checkout</a>
+				</p>
 				
 				<table style="width:100%;">
 					<tr>
@@ -173,7 +178,7 @@
                 name.style.backgroundColor = badColor; 
                 name.style.color = "#fff";
                 errorCount++;
-                message.innerHTML += "Name field error! Minimum <b>2 signs!</b><br/>";
+                message.innerHTML += "Name field error! Minimum <b>2 characters!</b><br/>";
         } else {
                 name.style.backgroundColor = withoutColor;
                    name.style.color = "#9d9d9d";
@@ -183,7 +188,7 @@
                 surname.style.backgroundColor = badColor; 
                 surname.style.color = "#fff";
                 errorCount++;
-                message.innerHTML += "Surname field error! Minimum <b>2 signs!</b><br/>";
+                message.innerHTML += "Surname field error! Minimum <b>2 characters!</b><br/>";
         } else {
                 surname.style.backgroundColor = withoutColor;
                    surname.style.color = "#9d9d9d";
@@ -195,7 +200,7 @@
                 phone.style.backgroundColor = badColor; 
                 phone.style.color = "#fff";
                 errorCount++;
-                message.innerHTML += "Phone field error! Minimum <b>6 signs!</b><br/>";
+                message.innerHTML += "Phone field error! Minimum <b>6 characters!</b><br/>";
         } else {
                 phone.style.backgroundColor = withoutColor;
                    phone.style.color = "#9d9d9d";
@@ -205,7 +210,7 @@
                 address.style.backgroundColor = badColor; 
                 address.style.color = "#fff";
                 errorCount++;
-                message.innerHTML += "Address field error! Minimum <b>10 signs!</b><br/>";
+                message.innerHTML += "Address field error! Minimum <b>10 characters!</b><br/>";
         } else {
                 address.style.backgroundColor = withoutColor;
                    address.style.color = "#9d9d9d";
