@@ -109,11 +109,11 @@
 		<div class="my-page-wrap">	
 			<div id="my-mainbody-columns" class="my-content-no-sidebar">	
 				<section id="my-mainbody">
-					<img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" /><h4>Thor: The Dark World</h4><br/>
 					<div style="float:left;">
 						<img src="images/movies/thor/poster.jpg" alt="Poster Thor" style="width:250px;"/>
 					</div>
 					<div style="float:left;padding-left:30px;">
+							<h2>Thor: The Dark World</h2><br/>
 						<p style="color:#777;line-height:250%;">
 							<b>Year: </b>2012<br/>
 							<b>Director: </b>Alan Taylor<br/>
@@ -148,12 +148,17 @@
 		<style>.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://player.vimeo.com/video/64703282?byline=0&amp;portrait=0&title=0amp;color=ffffff' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 		
 		<p>&nbsp;</p>
+		<img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" />
+		
 		<h4>Photos and screens</h4><br/>
 		<div class="fixed-bar demo-3">
 		<ul id="carousel" class="elastislide-list">
-						<li style="max-width:393px!important;"><a href="#"><img src="images/movies/thor/small/1.jpg" alt="image01" /></a></li>
-						<li style="max-width:393px!important;"><a href="#"><img src="images/movies/thor/small/2.jpg" alt="image02" /></a></li>
-						<li style="max-width:493px!important;"><a href="#"><img src="images/movies/thor/small/3.jpg" alt="image03" /></a></li>
+						<li style="max-width:393px!important;"><img src="images/movies/thor/small/1.jpg" alt="image01" /></li>
+						<li style="max-width:393px!important;"><img src="images/movies/thor/small/2.jpg" alt="image02" /></li>
+						<li style="max-width:393px!important;"><img src="images/movies/thor/small/3.jpg" alt="image03" /></li>
+						<li style="max-width:373px!important;"><img src="images/movies/thor/small/4.jpg" alt="image04" /></li>
+						<li style="max-width:433px!important;"><img src="images/movies/thor/small/5.jpg" alt="image05" /></li>
+						<li style="max-width:393px!important;"><img src="images/movies/thor/small/6.jpg" alt="image06" /></li>
 					</ul>
 		</div>
 		<!-- SCRIPTS TO ACTIVATE CAROUSEL -->
@@ -177,7 +182,10 @@
 		
 		<img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" />
 		<h4 id = "commentCount">Comments (2)</h4><br/>
-		<form>
+							
+				<span id="message" class="message" style="color:red;font-size:12px;"></span><br/>
+				
+				<form>
 		<textarea id="textarea" placeholder="Add your comment here" class="comment"></textarea>
 		<div id="count" style="font-size:13px;font-family:'Open Sans';">Characters left: 250</div>
 		</form>
@@ -193,13 +201,27 @@
 						});
 
 					function addComment(){
+						var badColor = "#ff6666";
+						var withoutColor = "#ffffff";
 						var commentText = $("#textarea").val();
-						$(".comments").prepend('<table><tr><td><img src="images/avatar1.jpg" class="comment-avatar" alt="" /></td><td><b>John Doe</b><br/><div class="comment-date">23.11.2013 11:12am</div></td></tr></table><p class="comment-post">'+commentText+'</p>');
-						$("#textarea").val('');
-												
-						numOfComments = numOfComments + 1;
-
-						$("#commentCount").text("Comments ("+numOfComments+")");
+						message.innerHTML = ""; 
+						if(commentText.length < 25) {
+								//commentText.style.backgroundColor = badColor; 
+								//commentText.style.color = "#fff";
+								$("#message").text("");
+								$("#textarea").css("border","1px solid red;");
+								$("#message").prepend("Minimum 25 signs required!<br/>");
+						} else {
+								//commentText.style.backgroundColor = withoutColor;
+								//commentText.style.color = "#9d9d9d";
+								
+								
+								$(".comments").prepend('<table><tr><td><img src="images/avatar1.jpg" class="comment-avatar" alt="" /></td><td><b>John Doe</b><br/><div class="comment-date">23.11.2013 11:12am</div></td></tr></table><p class="comment-post">'+commentText+'</p>');
+								$("#textarea").val('');
+								numOfComments = numOfComments + 1;
+								$("#count").text("Characters left: 250");
+								$("#commentCount").text("Comments ("+numOfComments+")");
+						 }
 					}
 
 

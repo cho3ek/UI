@@ -171,6 +171,10 @@
 
 					<img src="images/bullet_title.png" alt="" style="float:left;margin-top:7px;margin-right:5px;" />
 					<h4 id = "commentCount">Comments (2)</h4><br/>
+					
+					
+					
+				<span id="message" class="message" style="color:red;font-size:12px;"></span><br/>
 					<form>
 						<textarea id="textarea" placeholder="Add your comment here" class="comment"></textarea>
 						<div id="count" style="font-size:13px;font-family:'Open Sans';">Characters left: 250</div>
@@ -178,6 +182,7 @@
 					
 
 
+					
 
 
 					<div class="button black" onclick="addComment()" style="float:right;width:150px;">Add Comment</div>
@@ -198,15 +203,27 @@
 					});
 
 					function addComment(){
-
-
+						var badColor = "#ff6666";
+						var withoutColor = "#ffffff";
 						var commentText = $("#textarea").val();
-						$(".comments").prepend('<table><tr><td><img src="images/avatar1.jpg" class="comment-avatar" alt="" /></td><td><b>John Doe</b><br/><div class="comment-date">23.11.2013 11:12am</div></td></tr></table><p class="comment-post">'+commentText+'</p>');
-						$("#textarea").val('');
-						numOfComments = numOfComments + 1;
-
-						$("#commentCount").text("Comments ("+numOfComments+")");
-
+						message.innerHTML = ""; 
+						if(commentText.length < 25) {
+								//commentText.style.backgroundColor = badColor; 
+								//commentText.style.color = "#fff";
+								$("#message").text("");
+								$("#textarea").css("border","1px solid red;");
+								$("#message").prepend("Minimum 25 signs required!<br/>");
+						} else {
+								//commentText.style.backgroundColor = withoutColor;
+								//commentText.style.color = "#9d9d9d";
+								
+								
+								$(".comments").prepend('<table><tr><td><img src="images/avatar1.jpg" class="comment-avatar" alt="" /></td><td><b>John Doe</b><br/><div class="comment-date">23.11.2013 11:12am</div></td></tr></table><p class="comment-post">'+commentText+'</p>');
+								$("#textarea").val('');
+								numOfComments = numOfComments + 1;
+								$("#count").text("Characters left: 250");
+								$("#commentCount").text("Comments ("+numOfComments+")");
+						 }
 					}
 
 					</script>
